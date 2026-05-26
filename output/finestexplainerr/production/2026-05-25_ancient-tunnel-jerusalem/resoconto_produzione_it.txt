@@ -1,20 +1,29 @@
 Resoconto produzione — Ancient Tunnel Mystery in Jerusalem
 Cartella: output/finestexplainerr/production/2026-05-25_ancient-tunnel-jerusalem/
-Stato: packaging completato / in attesa di production pack finale
+Stato: production pack + TTS Gemini completati / pronta per immagini e assemblaggio
 
 Deliverable presenti:
 - outline.md
 - script.md
+- script_final.md
+- poet_notes.md
 - title_options.md
 - qa_checklist.md
+- production_pack_it.md
+- image_prompts_scene15_plus.txt
+- tts_gemini_scene01_plus/manifest.json
+- tts_gemini_scene01_plus/scene_XX.wav
+- tts_gemini_scene01_plus/scene_XX_merged.wav
 
 Sintesi:
 - Seconda produzione avviata dopo decisione editoriale di variare rispetto al tema bunker
 - Angle scelto: "What it wasn't"
-- Tutti i deliverable SCRIPT STEALING sono pronti
-- Non risultano ancora script_final.md, poet_notes.md o production_pack_it.md
+- Passaggio POET completato
+- Production pack generato nel nuovo formato solo immagine + audio
+- Workflow Gemini TTS eseguito su 15 scene
+- Per le scene chunkate sono stati creati anche file `_merged.wav` per semplificare il montaggio
 
 Prossimi step operativi:
-1. Eventuale passaggio POET / polish finale
-2. Generazione del production_pack_it.md
-3. Voiceover, immagini e assemblaggio
+1. Generare le immagini scena-per-scena usando `image_prompts_scene15_plus.txt`
+2. Scegliere i file audio finali (`scene_XX.wav` singoli o `scene_XX_merged.wav` dove necessario)
+3. Assemblare video finale e rifinire pacing audiovisivo

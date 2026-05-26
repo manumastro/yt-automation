@@ -15,20 +15,21 @@ File chiave presenti:
 - image_prompts_scene15_plus.txt
 
 2) 2026-05-25_ancient-tunnel-jerusalem
-Stato: packaging completato / in attesa di production pack finale
+Stato: production pack + TTS Gemini completati / pronta per immagini e assemblaggio
 Dettaglio: `output/finestexplainerr/production/2026-05-25_ancient-tunnel-jerusalem/resoconto_produzione_it.txt`
 File chiave presenti:
-- script.md
-- title_options.md
-- qa_checklist.md
+- script_final.md
+- production_pack_it.md
+- image_prompts_scene15_plus.txt
+- tts_gemini_scene01_plus/manifest.json
 
 Stato sintetico canale:
 - CLERK: completato
 - NICHE BENDING: completato
 - AI NEWS: completato
 - Produzioni completate o avviate: 2
-- Video più avanzato: `2026-05-24_secret-government-bunkers`
-- Prossimo step operativo più vicino: chiudere pack finale della produzione `2026-05-25_ancient-tunnel-jerusalem`
+- Video più avanzato: `2026-05-25_ancient-tunnel-jerusalem`
+- Prossimo step operativo più vicino: generare immagini e assemblare la produzione `2026-05-25_ancient-tunnel-jerusalem`
 
 Regola d'uso:
 - Questo file resta una vista corrente del canale

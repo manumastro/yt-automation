@@ -28,7 +28,7 @@ def parse_scenes(markdown: str) -> list[dict]:
         scene_number = int(match.group(1))
         section = match.group(0)
         audio_match = re.search(
-            r"(?ms)^### C\) Audio scena\nScene\n(.*?)\n\nSample Context\n(.*?)\n\nText\n(.*?)(?:\n\n---|\Z)",
+            r"(?ms)^### (?:C\) Audio scena|D\) Prompt audio — Gemini TTS)\nScene\n(.*?)\n\nSample Context\n(.*?)\n\nText\n(.*?)(?:\n\n---|\Z)",
             section,
         )
         if not audio_match:
