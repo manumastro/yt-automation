@@ -1,0 +1,19 @@
+Sintesi Niche Bending — FinestExplainer
+
+Niche bending completato: abbiamo sviluppato la direzione "Secret Cities".
+
+Cosa abbiamo dedotto:
+- Nuova nicchia: città nascoste, luoghi abbandonati, città sotterranee, siti "invisibili".
+- Fit con il format originale: mantiene mystery/creepy + approccio factual "Explained in X minutes".
+- Pillar principali:
+  1) Ghost Towns
+  2) Underground Cities
+  3) Secret/Invisible Cities
+  4) Lost Civilization Sites
+  5) Modern Abandoned Places
+- Target: 18-45, pubblico curioso di misteri, storia e urban exploration.
+- Fonti core: Reddit (AbandonedPorn, UrbanExploring, ecc.), Wikipedia, Atlas Obscura, competitor YouTube.
+- Output creati: niche_bends.md, topic_ideas.md, primary_sources.md.
+
+Prossimo step consigliato:
+selezionare 3 topic top e creare 1 outline pronto per script.

@@ -1,0 +1,295 @@
+# 🏆 CANALI YOUTUBE — FILTRO US/NO REGION | Ordinati per Revenue Stimata
+> Generato: 2026-04-10 | Fonti: breakout.json, to_clone.txt, yt_channels_080426.txt, SocialBlade
+> Filtrati: solo canali US o senza regione. Rimossi: Tanzania, Filippine, Indonesia, Sudafrica, Corea del Sud, Egitto, Olanda, Canada.
+
+---
+
+## 📊 LEGENDA
+
+| Metrica | Descrizione |
+|---------|-------------|
+| **Breakout Score** | Potenziale di crescita virale (0-100) |
+| **Faceless Score** | Quanto il canale è "senza volto" (0-100). >30 = facilmente replicabile con AI |
+| **Revenue St.** | Stima mensile da AdSense (basata su RPM stimato × views mensili) |
+| **Trend** | Direzione crescita recente (UP ⬆ / DOWN ⬇ / STABLE ➡) |
+
+---
+
+# CLASSIFICA COMPLETA PER REVENUE STIMATA
+
+## #1 — Chezzoid 💰 $7,000/mese
+- **URL:** https://youtube.com/@chezzoid
+- **Subs:** ~86.5K | **Revenue:** ~$7,000/mese (~€6,400)
+- **Paese:** — (non specificato)
+- **Nicchia:** True horror stories, creepy encounters, CCTV footage, paranormal
+- **Format:** Compilation di clip horror/creepy + narrazione voiceover drammatica
+- **Analisi:** REVENUE PIÙ ALTA di tutti. Facilmente replicabile con AI (voiceover + footage online). Ha anche Telegram da 132K follower.
+- **⭐ CLONE TOP PICK**
+
+---
+
+## #2 — The Scribble Scholar 💰 $6,300/mese
+- **URL:** https://youtube.com/@TheScribbleScholarOfficial
+- **Subs:** ~46.5K | **Revenue:** ~$6,300/mese (~€5,770)
+- **Paese:** — (non specificato)
+- **Nicchia:** Doodle/Sketch explainer — disegni a mano che spiegano concetti
+- **Format:** Doodle animation + voiceover educational
+- **Analisi:** Secondo canale più profittevole. Replicabile con AI (generate immagini + anima + voiceover).
+- **⭐ CLONE TOP PICK**
+
+---
+
+## #3 — Finest Explainer 💰 $4,713/mese
+- **URL:** https://youtube.com/@finestexplainerr
+- **Subs:** 18.6K | **Video:** 7 | **Total Views:** 4.8M
+- **Avg Views:** 690K | **Max Video:** 3.3M
+- **Breakout Score:** 84.4 | **Faceless:** 16 | **Trend:** ⬆ UP
+- **Paese:** US | **Età Canale:** 123 giorni (Dic 2025)
+- **RPM Stimato:** $4.00 | **SocialBlade:** $30-$474/giorno
+- **Nicchia:** Explainer — "Every X Explained in Y Minutes"
+- **Video Top:** "The Most Dangerous Computer Viruses Explained In 8 Minutes (Pt.1)" — 3.3M views
+- **Analisi:** Crescita ESPLOSIVA. Solo 7 video e quasi 5M views. RPM alto per nicchia tech/science.
+- **⭐ TOP CLONE CANDIDATE**
+
+---
+
+## #4 — Rumi x KPOP Friends 💰 $3,199/mese
+- **URL:** https://youtube.com/@rumixkpopfriends
+- **Subs:** 112K | **Video:** 73 | **Total Views:** 16.3M
+- **Avg Views:** 224K | **Max Video:** 3.4M
+- **Breakout Score:** 72.1 | **Faceless:** 8 | **Trend:** ⬇ DOWN
+- **Paese:** — (non specificato) | **Età Canale:** 230 giorni
+- **RPM Stimato:** $1.50
+- **Nicchia:** Roblox gameplay + KPop Demon Hunters (parody)
+- **Analisi:** Sfrutta trend KPop Demon Hunters. Trend in forte calo (trend quasi finito). Revenue alta ma momento sbagliato per clonare.
+
+---
+
+## #5 — Everlight Drama 💰 $2,526/mese
+- **URL:** https://youtube.com/@everlightdrama
+- **Subs:** 11.5K | **Video:** 41 | **Total Views:** 1.8M
+- **Avg Views:** 44K | **Max Video:** 626K
+- **Breakout Score:** 60.1 | **Faceless:** 0 | **Trend:** ⬆ UP
+- **Paese:** US | **Età Canale:** 86 giorni (Gen 2026)
+- **RPM Stimato:** $4.00
+- **Nicchia:** Drama shorts — romance/flash marriage stories (tipo ReelShort)
+- **Analisi:** RPM altissimo. Post daily. Faceless 0 = serve acting/recitazione. Non clonabile con AI pura.
+
+---
+
+## #6 — M Simplified 💰 $2,062/mese
+- **URL:** https://youtube.com/@msimplifiedx
+- **Subs:** 14K | **Video:** 15 | **Total Views:** 2M
+- **Avg Views:** 136K | **Max Video:** 930K
+- **Breakout Score:** 75.1 | **Faceless:** 28 | **Trend:** ⬆ UP
+- **Paese:** US | **Età Canale:** 119 giorni (Dic 2025)
+- **RPM Stimato:** $4.00
+- **Nicchia:** Stick-figure explainers — horror legends, creature explanations
+- **Video Top:** "Trevor Henderson Biggest Giants Explained in 9 Minutes" — 930K views
+- **Analisi:** Formato stick-figure + horror, trend UP, giovanissimo. Facilmente replicabile con AI.
+- **⭐ TOP CLONE CANDIDATE**
+
+---
+
+## #7 — Sketchinance 💰 $1,928/mese
+- **URL:** https://youtube.com/@sketchinance
+- **Subs:** 40.9K | **Video:** 59 | **Total Views:** 2.4M
+- **Avg Views:** 41K | **Max Video:** 1.3M
+- **Breakout Score:** 53.9 | **Faceless:** 11 | **Trend:** ⬇ DOWN
+- **Paese:** US | **Età Canale:** 151 giorni
+- **RPM Stimato:** $4.00
+- **Nicchia:** Finance education — "Hidden Money Systems", wealth building
+- **Analisi:** Revenue alta grazie a RPM finance ($4), anche con views moderate. Trend in calo ma nicchia profittevole.
+
+---
+
+## #8 — Christian Nerd 💰 $1,570/mese
+- **URL:** https://youtube.com/@christiannerdyt
+- **Subs:** 39.6K | **Video:** 23 | **Total Views:** 3.9M
+- **Avg Views:** 171K | **Max Video:** 866K
+- **Breakout Score:** 71.7 | **Faceless:** 41 ⭐ | **Trend:** ➡ STABLE
+- **Paese:** — (non specificato) | **Età Canale:** 263 giorni
+- **RPM Stimato:** $3.50
+- **Nicchia:** Christian education — "Facts about Jesus", "Cursed things from the Bible"
+- **Video Top:** "Every CURSED Thing from the Bible Explained" — 326K views
+- **Analisi:** ALTO FACELESS SCORE (41) = facilmente replicabile. Nicchia religion evergreen.
+- **⭐ TOP CLONE CANDIDATE**
+
+---
+
+## #9 — 20 Minute University 💰 $1,400/mese
+- **URL:** https://youtube.com/@20minuteuniversity
+- **Subs:** 116K
+- **Paese:** — (non specificato)
+- **Revenue:** ~$1,400/mese
+- **Nota:** SOLO 1 VIDEO pubblicato ma 116K subs — probabilmente shorts virali o canale rebrandizzato
+- **Analisi:** Numeri anomali. Da investigare meglio prima di clonare.
+
+---
+
+## #10 — Ask Nigel 💰 $1,350/mese
+- **URL:** https://youtube.com/@asknigel
+- **Subs:** 36K | **Video:** 60 | **Total Views:** 3.9M
+- **Avg Views:** 65K | **Max Video:** 980K
+- **Breakout Score:** 51.3 | **Faceless:** 16 | **Trend:** ⬇ DOWN
+- **Paese:** US | **Età Canale:** 346 giorni
+- **RPM Stimato:** $4.00
+- **Nicchia:** Explainer — body, brain, mind, supplements, psychology
+- **Analisi:** Formato consolidato ma trend in calo. Posts troppo frequenti probabilmente diluiscono la qualità.
+
+---
+
+## #11 — The Dalio Method 💰 $1,251/mese
+- **URL:** https://youtube.com/@thedaliomethodusa
+- **Subs:** 13.3K | **Video:** 41 | **Total Views:** 938K
+- **Avg Views:** 23K | **Max Video:** 344K
+- **Breakout Score:** 43.4 | **Faceless:** 0 | **Trend:** ⬇ DOWN
+- **Paese:** US | **Età Canale:** 90 giorni (Gen 2026)
+- **RPM Stimato:** $4.00
+- **Nicchia:** Finance — Ray Dalio principles, market crashes, debt cycles
+- **Analisi:** Revenue alta per RPM finance ma trend down. Faceless 0 = Ray Dalio impersonator.
+
+---
+
+## #12 — renn explains 💰 $840/mese
+- **URL:** https://youtube.com/@rennexplains
+- **Subs:** 11.8K | **Video:** 55 | **Total Views:** 2.7M
+- **Avg Views:** 49K | **Max Video:** 398K
+- **Breakout Score:** 49.8 | **Faceless:** 11 | **Trend:** ⬆ UP
+- **Paese:** — (non specificato) | **Età Canale:** 144 giorni
+- **RPM Stimato:** $1.50
+- **Nicchia:** Gaming explainers — Elder Scrolls, Elden Ring, Skyrim
+- **Analisi:** Trend UP, post daily. Nicchia gaming + formato explained. Buon volume views.
+
+---
+
+## #13 — Explaineur 💰 $586/mese
+- **URL:** https://youtube.com/@explaineur
+- **Subs:** 19K | **Video:** 69 | **Total Views:** 1.3M
+- **Avg Views:** 19K | **Max Video:** 342K
+- **Breakout Score:** 40.7 | **Faceless:** 49 ⭐⭐ | **Trend:** ⬇ DOWN
+- **Paese:** US | **Età Canale:** 263 giorni
+- **RPM Stimato:** $4.00
+- **Nicchia:** Lifestyle explainers — vitamins, coffee, sleep habits, small changes
+- **Analisi:** FACELESS SCORE 49 — quasi max riproducibilità AI. Formato "Every X Explained" versatile.
+
+---
+
+## #14 — SciMind 💰 $543/mese
+- **URL:** https://youtube.com/@scimindyt
+- **Subs:** 21.6K | **Video:** 42 | **Total Views:** 4.1M
+- **Avg Views:** 97K | **Max Video:** 3.1M
+- **Breakout Score:** 49.1 | **Faceless:** 28 ⭐ | **Trend:** ⬇ DOWN
+- **Paese:** — (non specificato) | **Età Canale:** 338 giorni
+- **RPM Stimato:** $1.50
+- **Nicchia:** Science & Space — "Most Terrifying Events in the Universe"
+- **Analisi:** Un video ha 3.1M views (virale). Faceless score 28 = replicabile. Trend in calo forte.
+
+---
+
+## #15 — The Brainster 💰 $282/mese
+- **URL:** https://youtube.com/@the-brainster
+- **Subs:** 7.2K | **Video:** 13 | **Total Views:** 1.4M
+- **Avg Views:** 105K | **Max Video:** 1.1M
+- **Breakout Score:** 55.8 | **Faceless:** 16 | **Trend:** ⬇ DOWN
+- **Paese:** — (non specificato) | **Età Canale:** 219 giorni
+- **RPM Stimato:** $1.50
+- **Nicchia:** Brain/psychology explainers — "Every Level of Brain Glitches Explained"
+- **Analisi:** Formato "Every X Explained in Y Minutes". Poche views recenti, trend down.
+
+---
+
+## #16 — MATCHBOX 💰 $225/mese
+- **URL:** https://youtube.com/@m4tch80x
+- **Subs:** 39.9K | **Video:** 12 | **Total Views:** 550K
+- **Avg Views:** 46K | **Max Video:** 140K
+- **Breakout Score:** 39.2 | **Faceless:** 0 | **Trend:** ➡ STABLE
+- **Paese:** US | **Età Canale:** 293 giorni
+- **RPM Stimato:** $4.00
+- **Nicchia:** Non chiaro (game show / competition)
+- **Analisi:** Faceless 0 = contenuti con persone reali. Non facilmente replicabile.
+
+---
+
+## #17 — Mr. Vehicle Explainer 💰 $152/mese
+- **URL:** https://youtube.com/@vehicle_explainer
+- **Subs:** 695 | **Video:** 6 | **Total Views:** 186K
+- **Avg Views:** 31K | **Max Video:** 185K
+- **Breakout Score:** 48.4 | **Faceless:** 8 | **Trend:** ⬇ DOWN
+- **Paese:** US | **Età Canale:** 147 giorni
+- **RPM Stimato:** $4.00
+- **Nicchia:** Vehicle explainers — cars, military, space vehicles
+- **Analisi:** Canalino neonato. Formato interessante per nicchia automotive. Da monitorare.
+
+---
+
+# 📋 CANALI DA INVESTIGARE (da yt_channels_080426.txt — nessun dato revenue)
+
+### The Inspire Path
+- **URL:** https://youtube.com/@theinspirepath7
+
+### CatNectar
+- **URL:** https://youtube.com/@catnectar
+
+### Felineeus
+- **URL:** https://youtube.com/@felineeus
+
+### Midnight Oracie
+- **URL:** https://youtube.com/@midnightoracie
+
+### MoneyChuck
+- **URL:** https://youtube.com/@MoneyChuck
+
+### PathoHub
+- **URL:** https://youtube.com/@pathohubb
+
+---
+
+# 🎯 TOP 5 DA CLONARE (solo US/no-region)
+
+| Rank | Canale | Revenue/mese | Faceless | Trend | Perché |
+|------|--------|-------------|----------|-------|--------|
+| 🥇 | **Chezzoid** | ~$7,000 | ~30 | N/A | Revenue #1, horror compilations, facilissimo con AI |
+| 🥈 | **The Scribble Scholar** | ~$6,300 | ~35 | N/A | Doodle explainer, alta revenue, replicabile |
+| 🥉 | **Finest Explainer** | ~$4,713 | 16 | ⬆ UP | 7 video = 4.8M views, crescita esplosiva |
+| 4° | **M Simplified** | ~$2,062 | 28 | ⬆ UP | Stick-figure horror, trend UP, giovanissimo |
+| 5° | **Christian Nerd** | ~$1,570 | 41 | ➡ STABLE | Faceless score altissimo, nicchia religion evergreen |
+
+---
+
+# 💰 REVENUE TOTALI COMBINED
+
+| Canale | Revenue Mensile | Revenue Annuale |
+|--------|----------------|-----------------|
+| Chezzoid | $7,000 | $84,000 |
+| The Scribble Scholar | $6,300 | $75,600 |
+| Finest Explainer | $4,713 | $56,556 |
+| Rumi x KPOP Friends | $3,199 | $38,388 |
+| Everlight Drama | $2,526 | $30,312 |
+| M Simplified | $2,062 | $24,744 |
+| Sketchinance | $1,928 | $23,136 |
+| Christian Nerd | $1,570 | $18,840 |
+| 20 Minute University | $1,400 | $16,800 |
+| Ask Nigel | $1,350 | $16,200 |
+| The Dalio Method | $1,251 | $15,012 |
+| renn explains | $840 | $10,080 |
+| Explaineur | $586 | $7,032 |
+| SciMind | $543 | $6,516 |
+| The Brainster | $282 | $3,384 |
+| MATCHBOX | $225 | $2,700 |
+| Mr. Vehicle Explainer | $152 | $1,824 |
+| **TOTALE** | **$35,927** | **$431,124** |
+
+---
+
+# 📝 NOTE
+
+- ⚠️ Revenue stimate: il vero RPM dipende da paese audience, tipo ads, stagione, retention.
+- ⚠️ SocialBlade usa range $0.25-$4.00 RPM. Canali US/finance/science → $3-4, entertainment → $0.50-1.50.
+- 🎯 Per clonazione AI: canali con Faceless Score >25 sono i migliori.
+- 📈 Trend UP > Breakout Score. Meglio canale con breakout 60 e trend UP che 80 e trend DOWN.
+- ❌ Rimossi canali da: Tanzania, Filippine, Indonesia, Sudafrica, Corea del Sud, Egitto, Olanda, Canada.
+
+---
+
+*Report generato automaticamente il 2026-04-10*

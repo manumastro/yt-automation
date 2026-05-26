@@ -1,0 +1,241 @@
+[00:03] Stuxnet. In 2010, a computer virus
+[00:03] called Stuxnet was discovered by
+[00:04] cybersecurity researchers. At first, it
+[00:07] looked like another complex piece of
+[00:08] malware, but deeper analysis revealed
+[00:11] something far more sophisticated.
+[00:12] Stuxnet was built to infiltrate
+[00:14] industrial control systems and quietly
+[00:16] manipulate how real machines operated.
+[00:19] The malware specifically searched for
+[00:20] control systems produced by Siemens that
+[00:22] were operated using software called
+[00:24] Siemens Step 7. These systems controlled
+[00:27] programmable logic controllers, or PLCs,
+[00:30] which managed the operation of large
+[00:31] industrial machines in factories and
+[00:33] critical infrastructure. Once the
+[00:35] correct system was found, the virus
+[00:37] quietly modified the PLC instructions
+[00:39] that controlled the machinery. In
+[00:41] nuclear facilities, this allowed the
+[00:43] malware to change the speed of
+[00:44] centrifuges, machines designed to spin
+[00:46] at extremely high speeds. Stuxnet forced
+[00:49] the centrifuges to speed up and slow
+[00:51] down in abnormal patterns, slowly
+[00:53] putting stress on the equipment. At the
+[00:54] same time, it intercepted the monitoring
+[00:56] signals and sent normal readings back to
+[00:58] the control screens, making the system
+[01:00] appear stable to the engineers watching
+[01:02] it. The attack is widely believed to
+[01:04] have targeted the Natanz nuclear
+[01:05] facility in Iran, where reports suggest
+[01:08] that around a thousand centrifuges were
+[01:09] eventually damaged. Because the malware
+[01:12] used multiple previously unknown
+[01:13] vulnerabilities and extremely complex
+[01:15] code, many experts believe the operation
+[01:18] was linked to efforts associated with
+[01:19] the United States and Israel. No
+[01:22] escape.exe.
+[01:24] No escape.exe
+[01:26] is a creepypasta-style computer virus
+[01:28] created by the YouTuber Enderman. It was
+[01:30] designed to simulate how a system might
+[01:32] behave if it were completely taken over
+[01:34] by a malicious program. It didn't spread
+[01:36] automatically and had to be downloaded
+[01:38] by the user, similar to memes. When the
+[01:40] file was first executed, the computer
+[01:42] immediately restarted, showing a red
+[01:44] screen instead of the usual blue. After
+[01:46] booting up, the login screen displayed
+[01:48] dozens of user accounts with strange
+[01:50] names, including one called no escape at
+[01:52] the top. When the user logged in by
+[01:54] typing the password death, the desktop
+[01:56] was covered with randomly named files.
+[01:58] Opening one revealed a message
+[02:00] suggesting that the system had been
+[02:01] taken over. The program also included
+[02:03] several actions that activated on
+[02:05] specific dates. In one case,
+[02:07] applications on the screen began moving
+[02:08] rapidly across the desktop, making the
+[02:10] system impossible to use. In another
+[02:12] case, the computer loaded normally at
+[02:14] first, but the display soon began to
+[02:16] distort and darken. The final action led
+[02:18] to a complete system failure. The red
+[02:20] background returned, followed by a
+[02:22] message stating that the computer was
+[02:23] done. The screen then became heavily
+[02:25] distorted, and the computer eventually
+[02:27] showed a corrupted blue screen before
+[02:29] appearing unable to boot again. Although
+[02:31] it appeared destructive, no escape was
+[02:33] not a real cyber attack and did not pose
+[02:35] a real-world threat. google.com.
+[02:38] google.com was originally registered in
+[02:40] 1998, but it later became associated
+[02:43] with more concerning behavior around
+[02:45] 2004. It was a classic example of
+[02:47] typosquatting, a site designed to look
+[02:49] like a well-known address so that small
+[02:51] typing mistakes could lead users to the
+[02:52] wrong page. Because the name closely
+[02:55] resembled Google, many users
+[02:56] accidentally entered it into their
+[02:58] browser. Once the site loaded, it did
+[03:00] not behave like a normal search engine.
+[03:02] Instead, it triggered multiple pop-up
+[03:04] windows and redirects. At the time,
+[03:06] systems like Windows XP were more
+[03:08] vulnerable to automatic downloads,
+[03:10] allowing files to be delivered and
+[03:11] executed in the background without clear
+[03:13] user interaction. One of the more
+[03:15] serious aspects of the site involved its
+[03:17] use of the WMF vulnerability, which
+[03:19] allowed certain image files to execute
+[03:21] code on the system. By exploiting this
+[03:23] weakness, it could run commands without
+[03:25] the user's awareness, increasing the
+[03:27] risk of unwanted software being
+[03:29] installed. Among the programs associated
+[03:31] with this behavior was a fake antivirus
+[03:33] application known as SpySheriff. Once
+[03:36] installed, it simulated a system scan
+[03:38] and displayed warnings claiming that the
+[03:39] computer was infected. It often
+[03:41] requested administrative access or urged
+[03:44] the user to purchase a full version to
+[03:46] remove the threats. Even after removal,
+[03:48] it could return and in some cases
+[03:50] restrict or completely block internet
+[03:52] access, making it harder for users to
+[03:54] find a solution. Although detailed
+[03:56] information about google.com remains
+[03:58] limited, most reports about it come from
+[04:00] user experiences and security
+[04:02] discussions from that period. Over time,
+[04:04] the site gradually faded from use. In
+[04:06] 2022, the domain was sold at auction for
+[04:09] approximately $270,000
+[04:12] and is now under the control of Google.
+[04:14] Ransomware. Ransomware appeared in 2017
+[04:17] and quickly stood out from other
+[04:18] ransomware for an unusual reason.
+[04:20] Instead of demanding money, the malware
+[04:22] required something completely different,
+[04:24] skill in a video game. Once inside a
+[04:26] system, it encrypted many common file
+[04:29] types, preventing the user from
+[04:30] accessing their data. When the
+[04:32] encryption was complete, a window
+[04:34] appeared explaining the condition for
+[04:35] recovery. To unlock their files, the
+[04:37] victim had to reach 200 million points
+[04:39] in the bullet hell game Touhou 12,
+[04:41] Undefined Fantastic Object. To enforce
+[04:43] this requirement, Ransomware actively
+[04:45] tracked the player's score during
+[04:47] gameplay. If the score was high enough,
+[04:49] it released the encryption key and
+[04:50] restored access to the files. Otherwise,
+[04:53] the system remained locked and the files
+[04:55] stayed encrypted. Despite how it
+[04:56] behaved, the program was never intended
+[04:58] to function as a real ransomware attack.
+[05:00] It was created by a Korean programmer as
+[05:02] a joke. However, the malware was
+[05:04] accidentally released in a functional
+[05:06] form, allowing people to download and
+[05:08] run it before the developer later
+[05:09] provided a decryption tool. Although
+[05:11] Ransomware never caused damage on the
+[05:13] same scale as major ransomware attacks,
+[05:15] it remains one of the strangest examples
+[05:17] of malware behavior. CryptoLocker. In
+[05:20] 2013, ransomware known as CryptoLocker
+[05:23] began spreading across computers
+[05:25] worldwide. It quickly became one of the
+[05:27] most notorious cyber threats of the
+[05:29] decade. Its goal was different from most
+[05:31] malware at the time. It locked the
+[05:32] victim's own data and demanded payment
+[05:35] to restore access. The ransomware was
+[05:37] often distributed through malicious
+[05:38] email attachments and botnets. Once
+[05:40] executed, it scanned the computer for
+[05:42] valuable files such as documents,
+[05:44] images, and other commonly used formats.
+[05:46] Instead of deleting them, it encrypted
+[05:48] the files using strong cryptographic
+[05:50] algorithms. After the encryption process
+[05:52] was complete, a message appeared on the
+[05:54] screen informing the victim that their
+[05:56] files had been locked. The malware
+[05:57] demanded payment, usually in Bitcoin or
+[06:00] prepaid vouchers, in exchange for a
+[06:01] decryption key. A countdown timer was
+[06:04] often displayed to pressure victims into
+[06:05] paying quickly. What made CryptoLocker
+[06:08] especially dangerous was the strength of
+[06:09] its encryption. Without the unique
+[06:11] private key stored on the attacker's
+[06:13] servers, recovering the files was nearly
+[06:15] impossible. This meant victims had to
+[06:17] choose between losing their data or
+[06:19] paying the ransom. The attack spread
+[06:21] widely across hospitals, workplaces, and
+[06:23] personal computers before international
+[06:25] law enforcement agencies eventually
+[06:27] disrupted the infrastructure used to
+[06:29] operate the malware, including the
+[06:30] botnet that allowed the ransomware to
+[06:32] spread. CIH. Chernobyl, also known as
+[06:36] CIH, emerged in the late 1990s and
+[06:39] quickly gained a reputation as one of
+[06:41] the most destructive computer viruses of
+[06:43] its time. Unlike many types of malware
+[06:45] that spread quietly, CIH was built with
+[06:48] a single purpose, to cause irreversible
+[06:50] damage. The virus spread primarily
+[06:52] through infected software downloads and
+[06:54] pirated programs. Once executed, it
+[06:57] stayed hidden in memory and activated
+[06:59] only on specific trigger dates, most
+[07:01] famously April 26th, the anniversary of
+[07:03] the Chernobyl nuclear disaster that gave
+[07:05] the virus its name. When activated, CIH
+[07:08] attacked the computer at a very deep
+[07:10] level. It overwrote critical parts of
+[07:12] the hard drive, destroying essential
+[07:14] system files and making the operating
+[07:15] system impossible to boot. On certain
+[07:18] systems, the virus went even further by
+[07:20] attempting to overwrite the BIOS
+[07:21] firmware. At the time, BIOS chips were
+[07:24] not protected the way they are today. If
+[07:26] the BIOS was successfully corrupted, the
+[07:28] computer would not just crash, it would
+[07:30] fail to start at all. In many cases, the
+[07:32] system appeared completely dead,
+[07:33] requiring a physical BIOS replacement or
+[07:36] professional repair. The impact was
+[07:38] widespread. Millions of computers were
+[07:40] affected worldwide, causing massive data
+[07:42] loss and costly hardware damage. Entire
+[07:44] systems were rendered unusable in
+[07:46] seconds, showing how destructive malware
+[07:48] could be when it targeted the lowest
+[07:50] layers of a computer. Over time, CIH
+[07:53] faded as operating systems improved
+[07:55] their security and BIOS protections
+[07:56] became standard. However, the incident
+[07:59] remains one of the earliest examples of
+[08:00] malware causing serious hardware-level
+[08:02] damage.

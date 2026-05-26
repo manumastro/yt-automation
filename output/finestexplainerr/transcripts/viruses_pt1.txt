@@ -1,0 +1,242 @@
+[00:03] want to cry. In May 2017, computers
+[00:03] around the world began locking up
+[00:05] without warning. Screens went black,
+[00:07] files were encrypted, and a red message
+[00:09] appeared in their place. It demanded
+[00:11] payment in Bitcoin and gave a deadline.
+[00:13] This was wannry, also known as
+[00:15] Wanicrypt, one of the most destructive
+[00:17] cyber attacks ever seen. Wukry spread
+[00:20] automatically by exploiting a
+[00:22] vulnerability in Windows systems, moving
+[00:24] from one computer to another across
+[00:26] entire networks. Within hours,
+[00:28] hospitals, schools, businesses, and
+[00:30] government offices were affected. Many
+[00:32] forced to shut down critical systems.
+[00:34] Once inside a computer, Wukry encrypted
+[00:37] files, documents, and photos, making
+[00:39] [clears throat] them completely
+[00:40] inaccessible. A countdown timer
+[00:42] appeared, warning victims that their
+[00:43] data would be lost forever if they
+[00:45] didn't pay in time. Even then, paying
+[00:47] offered no real guarantee of recovery.
+[00:49] What made Wry especially dangerous was
+[00:52] how quietly it moved. Many systems were
+[00:54] infected without any direct interaction
+[00:56] from the user. Computers that hadn't
+[00:58] been updated with security patches were
+[01:00] the most vulnerable, and the virus
+[01:01] spread rapidly through outdated
+[01:03] networks, leaving chaos in its wake. The
+[01:05] outbreak slowed only after a security
+[01:07] researcher discovered a hidden kill
+[01:08] switch in the code. By then, hundreds of
+[01:11] thousands of computers across more than
+[01:13] 150 countries had already been infected.
+[01:16] You are an idiot. In the early 2000s, a
+[01:19] strange and frustrating piece of malware
+[01:21] appeared online under a blunt name, you
+[01:23] are an idiot. Rather than hiding in the
+[01:26] background, this malware was built to
+[01:27] make itself impossible to ignore,
+[01:29] turning the user's own screen into the
+[01:31] attack. Once triggered, usually by
+[01:33] visiting a malicious website, the
+[01:35] malware immediately began opening
+[01:37] endless pop-up windows across the
+[01:39] screen. Each window displayed flashing
+[01:41] graphics, smiling faces, and the same
+[01:43] mocking message, "You are an idiot."
+[01:45] over and over again. Closing one window
+[01:47] only caused six more to appear, quickly
+[01:49] taking over the desktop. As the pop-ups
+[01:52] multiplied, system resources were pushed
+[01:54] to their limits. The constant creation
+[01:56] of new windows consumed memory and
+[01:58] processing power, causing computers to
+[02:00] slow down dramatically or become
+[02:01] completely unresponsive. In many cases,
+[02:04] users were forced to restart their
+[02:05] systems just to regain control. However,
+[02:08] restarting didn't always solve the
+[02:10] problem. Some variants of you are an
+[02:12] idiot used scripts that reactivated the
+[02:14] attack on startup, repeating the process
+[02:16] and trapping users in a cycle of crashes
+[02:18] and forced reboots. The malware didn't
+[02:21] steal data or encrypt files, but its
+[02:23] persistence made it incredibly
+[02:25] disruptive. I love you. In May 2000, the
+[02:29] I love you virus began when an email
+[02:31] reached a user. That message carried the
+[02:33] subject line I love you and included an
+[02:35] attachment named lovelet letter for you.
+[02:38] txt, a visual basic script disguised as
+[02:41] a harmless text file. When the
+[02:43] attachment was opened, the script
+[02:45] executed immediately and began copying
+[02:47] itself across the system. Once active, I
+[02:50] love you overwrote files, replacing
+[02:52] images, documents, and other critical
+[02:54] data with copies of itself. At the same
+[02:56] time, it accessed the user's address
+[02:58] book and automatically sent the infected
+[03:00] attachment to every contact it could
+[03:02] find, allowing the virus to move from
+[03:04] one inbox to the next without additional
+[03:06] user action. Rather than exploiting
+[03:08] complex software flaws, the virus relied
+[03:11] on trust and curiosity. Because the
+[03:13] email appeared personal and familiar,
+[03:15] many recipients opened it without
+[03:17] suspicion. Within days, millions of
+[03:19] computers were affected, forcing
+[03:21] organizations to shut down email systems
+[03:23] and isolate networks to contain the
+[03:25] damage. Security measures at the time
+[03:27] were largely unprepared for malware
+[03:28] distributed via email, making the attack
+[03:31] highly effective. My Doom. In early
+[03:34] 2004, My Doom appeared and quickly
+[03:36] became one of the fastest spreading
+[03:38] computer worms ever recorded. Instead of
+[03:40] relying on user interaction, Mydoom was
+[03:43] designed to spread automatically using
+[03:45] email and network connections to move
+[03:47] from one computer to another at an
+[03:49] unprecedented speed. Once a system was
+[03:51] infected, Mydoom scanned the computer
+[03:53] for email addresses stored in files,
+[03:56] address books, and cache data. It then
+[03:59] sent itself out as an email attachment,
+[04:01] often using generic or misleading
+[04:03] subject lines. Because the emails seem
+[04:05] to come from real contacts, many users
+[04:08] opened them without suspicion, allowing
+[04:10] the worm to spread even further. My Doom
+[04:12] didn't just spread quietly in the
+[04:14] background. It consumed system
+[04:16] resources, slowed down computers, and
+[04:18] caused noticeable performance issues. In
+[04:20] many cases, infected machines became
+[04:22] unstable with users experiencing freezes
+[04:25] or unusually high network activity. One
+[04:27] of Maidoom's most disruptive behaviors
+[04:29] was its use of infected computers to
+[04:32] launch large-scale DDoS attacks. These
+[04:35] attacks flooded targeted websites with
+[04:37] massive amounts of traffic, temporarily
+[04:39] knocking major online services offline
+[04:41] and demonstrating how malware could be
+[04:43] used as a weapon rather than just a
+[04:45] nuisance. At its peak, my Doom is
+[04:47] estimated to have caused around $ 38
+[04:49] billion in total damages worldwide,
+[04:52] making it one of the most costly cyber
+[04:54] attacks in history. My Doom also opened
+[04:56] a backdoor on infected systems, allowing
+[04:59] remote access without the user's
+[05:01] knowledge. This meant compromised
+[05:03] computers could be controlled from the
+[05:04] outside, further expanding the worm's
+[05:06] reach and potential damage. Bonsy Buddy.
+[05:10] In the early 2000s, an application named
+[05:12] Bonsy Buddy appeared on home computers.
+[05:15] At first glance, it looked like a
+[05:16] harmless desktop companion designed to
+[05:19] help users browse the internet, tell
+[05:21] jokes, and manage basic tasks. Bonsi
+[05:23] Buddy would greet you when you turned on
+[05:25] your computer, offer tips, and sometimes
+[05:27] even sing songs. Its cartoonish voice
+[05:30] and wiggly animations made it seem more
+[05:32] like a quirky friend than a threat. But
+[05:34] behind the friendly exterior, Bonsi
+[05:36] Buddy was far from innocent. The
+[05:38] software collected personal information,
+[05:40] tracked browsing habits, and displayed
+[05:42] intrusive ads. It could slow down
+[05:45] computers, and install unwanted
+[05:46] programs. While it was technically a
+[05:49] helper, many considered it malware
+[05:51] because of how aggressively it collected
+[05:53] data and interfered with normal computer
+[05:55] use. Bonsi Buddy became infamous not
+[05:57] just for its spying, but also for how
+[05:59] persistent it was. Even after
+[06:01] uninstalling it, leftover files and
+[06:03] settings could remain on the system and
+[06:05] affect performance. Over time, anti
+[06:07] virus programs flagged it as malicious
+[06:10] and its popularity quickly faded. Pedia
+[06:12] ransomware. Pettia ransomware was
+[06:15] identified in 2017 and operates at the
+[06:18] system level rather than the file level.
+[06:20] Unlike typical ransomware that encrypts
+[06:22] individual files, Pettia targeted the
+[06:24] master boot record, taking control of
+[06:26] the entire system. Once infected, the
+[06:28] computer would restart and display a
+[06:30] fake check disc screen simulating a disk
+[06:33] check. Then a skull appeared flashing
+[06:35] white and red colors along with a
+[06:37] message instructing users to press any
+[06:39] key. Only then did the ransomware reveal
+[06:42] that the files were fully encrypted and
+[06:44] inaccessible, demanding payment in
+[06:46] Bitcoin to regain access. Pedia spread
+[06:48] mainly through email attachments,
+[06:50] infected documents and network
+[06:52] vulnerabilities. It could move quickly
+[06:54] across connected computers, locking
+[06:56] entire networks, and preventing access
+[06:57] to essential files. The ransomware was
+[07:00] particularly effective against systems
+[07:01] that had not been updated or protected
+[07:03] with strong security measures, showing
+[07:05] how a single exploit could compromise
+[07:07] multiple machines at once. PETA did not
+[07:09] target individual files selectively.
+[07:12] Instead, it took over the system
+[07:14] entirely, making recovery without proper
+[07:16] backups extremely difficult.
+[07:18] Organizations, businesses, and critical
+[07:20] infrastructure were affected, often
+[07:22] leaving users unable to access programs
+[07:24] or data for hours or even days. Memes.
+[07:28] Memes first appeared in 2016 and quickly
+[07:31] became known as one of the most chaotic
+[07:32] pieces of malware ever created. It
+[07:35] wasn't built to steal data or make
+[07:36] money. Memes was designed to demonstrate
+[07:39] how far system control could be pushed,
+[07:41] turning a normal computer into a
+[07:42] non-stop cascade of errors and
+[07:44] disruptions. Memes was typically
+[07:46] downloaded and executed by users
+[07:48] themselves. Before running, it displayed
+[07:50] two clear warning messages stating that
+[07:51] serious system damage would occur.
+[07:53] Despite this, many people proceeded out
+[07:55] of curiosity. Once activated, memes
+[07:58] began triggering a series of actions
+[08:00] across the system. Random pop-up
+[08:02] messages appeared. Windows started
+[08:04] moving on their own. The colors invert
+[08:06] and system sounds played without
+[08:07] warning. As the infection continued,
+[08:09] memes interfered with basic system
+[08:11] functions. Keyboard input became
+[08:13] unreliable. Screen effects intensified
+[08:15] and common commands stopped behaving
+[08:17] normally. The malware deliberately
+[08:19] stacked these effects, making the system
+[08:21] increasingly difficult to control while
+[08:23] still remaining technically alive. At
+[08:25] the end of the attack, memes overwrote
+[08:27] the master boot record. Once this
+[08:29] happened, restarting the computer became
+[08:31] impossible, meaning you could no longer
+[08:32] use the

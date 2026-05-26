@@ -1,0 +1,794 @@
+#!/usr/bin/env python3
+"""
+🚀 YouTube Breakout Channel Scanner
+=====================================
+Trova canali YouTube nuovi (< 2 mesi) con pochi video ma già grande successo.
+Scansiona TUTTO YouTube senza cercare nicchie specifiche.
+
+Consumo API quasi ZERO:
+  - Fase 1+2: scrapetube (scraping, 0 API)
+  - Fase 3: UN batch API per iscritti + data creazione (~3 unità su 10.000/giorno)
+
+Uso:
+  python find_breakout_channels.py -o breakout.txt
+  python find_breakout_channels.py --max-age-days 30 --min-subs 5000 -o breakout.txt
+"""
+
+from __future__ import annotations
+
+import argparse
+import os
+import re
+import sys
+import time
+from collections import defaultdict
+from dataclasses import dataclass, field
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from typing import Optional
+
+import scrapetube
+from dateutil import parser as dateutil_parser
+
+# ─── Config ──────────────────────────────────────────────────────────
+API_KEY = os.environ.get(
+    "YOUTUBE_API_KEY", "AIzaSyCajbRbkAVbi9r977jkMNcrukTs6hww-JM"
+)
+
+DEFAULT_MAX_AGE_DAYS = 180
+DEFAULT_MAX_VIDEOS = 50
+DEFAULT_MIN_SUBS = 500
+DEFAULT_MIN_VIEWS_PER_VIDEO = 0
+DEFAULT_MIN_TOTAL_VIEWS = 5_000
+
+# Query ultra-broad che coprono ogni tipo di video virale.
+# Ogni query viene eseguita in 3 sort mode (view_count, relevance, upload_date).
+# Query ottimizzate per trovare canali FACELESS.
+# Cercano per FORMATO (voiceover, animation, AI, explained...) non solo per topic.
+BROAD_QUERIES = [
+    # ── Formati faceless espliciti ──
+    "faceless youtube channel", "AI generated video",
+    "text to speech story", "voiceover documentary",
+    "animated explainer", "AI animation",
+    "faceless shorts", "no face youtube",
+
+    # ── Explained / Educational (quasi sempre faceless) ──
+    "explained", "the truth about", "you didn't know",
+    "what happens if", "what would happen if",
+    "things you use wrong", "everyday science",
+    "comparison", "country comparison",
+    "map explained", "probability",
+    "ranking", "iceberg", "tier list",
+
+    # ── Psicologia & Motivazione (faceless dominant) ──
+    "psychology facts", "dark psychology",
+    "stoicism", "manipulation tactics",
+    "body language secrets", "emotional intelligence",
+    "mindset motivation", "discipline habits",
+
+    # ── Storia & Documentari (formato faceless classico) ──
+    "history documentary", "ancient civilizations",
+    "empire rise and fall", "dark history",
+    "mythology explained", "archaeology discovery",
+    "historical mysteries", "war documentary",
+    "geopolitics explained",
+
+    # ── True Crime & Misteri (voiceover + b-roll) ──
+    "true crime documentary", "unsolved mysteries",
+    "cold case documentary", "heist explained",
+    "scam breakdown", "crime psychology",
+    "disappeared documentary", "conspiracy explained",
+
+    # ── Scienza & Spazio (animazioni + voiceover) ──
+    "universe mysteries", "space explained",
+    "physics explained", "biology facts",
+    "deep ocean creatures", "dinosaurs documentary",
+    "evolution explained", "science animation",
+
+    # ── Finanza & Business (screencast/motion graphics) ──
+    "passive income explained", "investing explained",
+    "money mistakes", "wealth psychology",
+    "stock market explained", "crypto explained",
+    "business ideas", "side hustle ideas",
+
+    # ── Tech & AI (screencast/demo) ──
+    "AI tools", "future technology",
+    "robotics explained", "AI music",
+    "AI art", "AI voice",
+
+    # ── Animali (voiceover + footage stock/AI) ──
+    "animal facts", "cat psychology",
+    "why does my dog", "ocean creatures",
+    "insect facts", "animal intelligence",
+    "wild animals documentary",
+
+    # ── Salute & Corpo (animation/infographic) ──
+    "sleep science", "nutrition myths truth",
+    "gut health explained", "brain hacks science",
+    "longevity science", "weight loss truth",
+
+    # ── Anime/Movie Recap (faceless per definizione) ──
+    "anime recap", "movie explained",
+    "movie recap", "manga recap",
+    "video game lore", "horror story animated",
+    "creepypasta", "urban legend",
+
+    # ── Visual / ASMR / Satisfying (no face) ──
+    "satisfying", "ASMR", "oddly satisfying",
+    "restoration", "miniature", "time lapse",
+    "3D animation", "low poly", "abandoned places",
+
+    # ── Music / Ambient (visual + audio) ──
+    "sleep music", "lofi", "ambient music",
+    "soul music remix", "synthwave",
+
+    # ── Engineering & How It's Made ──
+    "how it's made", "megaproject",
+    "engineering explained", "factory tour",
+
+    # ── Heartwarming / Motivational shorts (AI + TTS) ──
+    "heartwarming story", "inspiring story animated",
+    "motivational story", "life lesson animation",
+]
+
+
+# ─── Faceless detection ──────────────────────────────────────────────
+# Segnali che un canale è probabilmente faceless (score-based)
+# Usiamo STEM (prefissi) per matchare varianti: "histor" → history, historical, etc.
+FACELESS_POSITIVE_KEYWORDS = [
+    # Formati faceless nella descrizione/nome/titoli
+    "animat", "voiceover", "voice over", "voice-over", "narrat",
+    "explain", "fact", "documentary", "document",
+    "ai generat", "ai tool", "ai technolog", "ai visual",
+    "text to speech", "tts", "faceless", "no face", "no-face",
+    "recap", "breakdown", "compil",
+    "restor", "asmr", "satisfy", "ambient",
+    "lofi", "lo-fi", "synthwave", "sleep", "relax", "meditat",
+    "stori", "myster", "psycholog", "scienc",
+    "histor", "mytholog", "crime", "cold case",
+    "engineer", "how it's made", "megaproject",
+    "civiliz", "empire", "ancient", "geopolitic",
+    "recreat", "visual",
+    # Stili produttivi tipicamente faceless
+    "motion graphic", "infographic", "whiteboard",
+    "stock footage", "b-roll", "3d", "low poly",
+    "cinematic", "timelapse", "time lapse", "time-lapse",
+    "top 10", "top 5", "comparison", "vs ",
+]
+
+FACELESS_NEGATIVE_KEYWORDS = [
+    # Segnali forti di canale con faccia / vlog / personale
+    "vlog", "grwm", "get ready with me",
+    "unboxing haul", "mukbang", "day in my life",
+    "storytime", "q&a", "meet my", "family vlog",
+    "podcast", "interview", "live stream",
+    "face reveal", "my face", "camera",
+]
+
+
+def faceless_score(name: str, description: str, titles: list[str]) -> int:
+    """
+    Stima quanto è probabile che un canale sia faceless.
+    Ritorna un punteggio 0-100. Soglia consigliata: >= 15.
+    """
+    text = f"{name} {description} {' '.join(titles)}".lower()
+    score = 0
+    matched_pos = 0
+
+    for kw in FACELESS_POSITIVE_KEYWORDS:
+        if kw in text:
+            score += 5
+            matched_pos += 1
+
+    for kw in FACELESS_NEGATIVE_KEYWORDS:
+        if kw in text:
+            score -= 20
+
+    # Bonus: titoli con pattern tipicamente faceless
+    faceless_title_patterns = [
+        "explained", "the truth", "you didn't know", "you don't know",
+        "what if", "how ", "why ", "the rise", "the fall",
+        "the entire", "the real", "the history", "the story",
+        "top ", "facts about", " vs ", "comparison",
+        "recap", "breakdown", "full story",
+        "in minutes", "in 10", "in 20", "in 30",
+    ]
+    title_text = " ".join(titles).lower()
+    for pat in faceless_title_patterns:
+        if pat in title_text:
+            score += 3
+
+    # Bonus: tanti segnali positivi senza negativi → sicuramente faceless
+    if matched_pos >= 3:
+        score += 10
+
+    return max(0, min(100, score))
+
+
+# ─── Helpers ─────────────────────────────────────────────────────────
+def fmt(n: int) -> str:
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f}M"
+    if n >= 1_000:
+        return f"{n / 1_000:.1f}K"
+    return str(n)
+
+
+def parse_view_count(text: str) -> int:
+    """'1,234,567 views' → 1234567 | '4.3M views' → 4300000"""
+    if not text:
+        return 0
+    text = text.lower().replace(",", "").replace("views", "").strip()
+    text = text.replace("\xa0", "")
+    try:
+        if "m" in text:
+            return int(float(text.replace("m", "")) * 1_000_000)
+        if "k" in text:
+            return int(float(text.replace("k", "")) * 1_000)
+        if "b" in text:
+            return int(float(text.replace("b", "")) * 1_000_000_000)
+        return int(float(text))
+    except ValueError:
+        return 0
+
+
+def is_recent_text(pub_text: str, max_months: int = 2) -> bool:
+    """'2 weeks ago' → True, '3 years ago' → False."""
+    if not pub_text:
+        return False
+    t = pub_text.lower()
+    if any(w in t for w in ["hour", "day", "week"]):
+        return True
+    if "month" in t:
+        m = re.search(r"(\d+)\s*month", t)
+        if m and int(m.group(1)) <= max_months:
+            return True
+    if "year" in t and max_months >= 12:
+        m = re.search(r"(\d+)\s*year", t)
+        if m and int(m.group(1)) * 12 <= max_months:
+            return True
+    return False
+
+
+def extract_channel_from_video(v: dict) -> tuple[str, str]:
+    """Estrae (channel_id, channel_name) da un risultato scrapetube."""
+    runs = v.get("ownerText", {}).get("runs", [{}])
+    if not runs:
+        runs = v.get("shortBylineText", {}).get("runs", [{}])
+    ch_name = runs[0].get("text", "") if runs else ""
+    ch_id = (
+        runs[0]
+        .get("navigationEndpoint", {})
+        .get("browseEndpoint", {})
+        .get("browseId", "")
+        if runs
+        else ""
+    )
+    return ch_id, ch_name
+
+
+def extract_title(v: dict) -> str:
+    runs = v.get("title", {}).get("runs", [{}])
+    return runs[0].get("text", "") if runs else v.get("title", {}).get("simpleText", "")
+
+
+# ─── Data ────────────────────────────────────────────────────────────
+@dataclass
+class Channel:
+    channel_id: str
+    name: str = ""
+    handle: str = ""
+    subs: int = 0
+    video_count: int = 0
+    total_views: int = 0
+    created_at: Optional[datetime] = None
+    age_days: int = 0
+    description: str = ""
+    country: str = ""
+    score: float = 0.0
+    avg_views: float = 0.0
+    faceless: int = 0
+    sample_videos: list = field(default_factory=list)
+
+    def calc(self):
+        if self.video_count > 0:
+            self.avg_views = self.total_views / self.video_count
+
+        s = 0.0
+        if self.age_days <= 0:
+            self.score = round(s, 1)
+            return
+
+        # Velocita crescita iscritti (subs/giorno) -- max 20pt
+        subs_per_day = self.subs / self.age_days
+        s += min(subs_per_day / 500, 1.0) * 20
+
+        # Velocita crescita views (views/giorno) -- max 25pt
+        views_per_day = self.total_views / self.age_days
+        s += min(views_per_day / 200_000, 1.0) * 25
+
+        # Rapporto subs/video (efficienza) -- max 15pt
+        if self.video_count > 0:
+            sub_eff = self.subs / self.video_count
+            s += min(sub_eff / 10_000, 1.0) * 15
+
+        # Video count: few videos = higher score -- max 20pt
+        if self.video_count > 0:
+            s += max(0, 1 - self.video_count / 50) * 20
+
+        # Bonus "jetpack": molte views con pochi video E pochi giorni
+        if self.video_count <= 15 and self.age_days <= 120 and self.avg_views >= 50_000:
+            s += 10
+
+        # Bonus faceless (leggero, favorisce formati replicabili)
+        s += min(self.faceless / 100, 1.0) * 5
+
+        self.score = round(s, 1)
+
+
+# ─── Phase 1: Discovery via scrapetube (0 API) ──────────────────────
+def _search_one(args: tuple) -> list[dict]:
+    """Worker per una singola query+sort. Ritorna lista di (vid_id, ch_id, ch_name, title, views, pub)."""
+    q, sort_mode, limit, min_views, max_months = args
+    try:
+        vids = list(scrapetube.get_search(q, limit=limit, sort_by=sort_mode))
+    except Exception:
+        return []
+
+    results = []
+    for v in vids:
+        vid_id = v.get("videoId", "")
+        if not vid_id:
+            continue
+
+        pub = v.get("publishedTimeText", {}).get("simpleText", "")
+        if not is_recent_text(pub, max_months):
+            continue
+
+        views = parse_view_count(
+            v.get("viewCountText", {}).get("simpleText", "")
+        )
+        if views < min_views:
+            continue
+
+        ch_id, ch_name = extract_channel_from_video(v)
+        if not ch_id:
+            continue
+
+        title = extract_title(v)
+        results.append({
+            "vid_id": vid_id, "ch_id": ch_id, "ch_name": ch_name,
+            "title": title, "views": views, "pub": pub,
+        })
+    return results
+
+
+def phase1_discover(queries: list[str], results_per_query: int, max_months: int) -> dict[str, dict]:
+    """
+    Cerca video virali recenti con TRE strategie combinate (parallelizzato).
+    Costo: ZERO API.
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    min_views_for_recent = 10_000
+
+    # Costruisci tutti i task
+    tasks = []
+    for q in queries:
+        tasks.append((q, "view_count", results_per_query * 3, 0, max_months))
+        tasks.append((q, "relevance", results_per_query, 0, max_months))
+        tasks.append((q, "upload_date", results_per_query, min_views_for_recent, max_months))
+
+    total = len(tasks)
+    print(f"🔍 Fase 1: Scoperta video virali ({total} ricerche, 12 thread)...", file=sys.stderr)
+
+    channels: dict[str, dict] = {}
+    seen_vids: set[str] = set()
+    done = 0
+    total_found = 0
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = {pool.submit(_search_one, t): t for t in tasks}
+        for fut in as_completed(futures):
+            done += 1
+            results = fut.result()
+            count = 0
+            for r in results:
+                if r["vid_id"] in seen_vids:
+                    continue
+                seen_vids.add(r["vid_id"])
+                ch_id = r["ch_id"]
+                if ch_id not in channels:
+                    channels[ch_id] = {"name": r["ch_name"], "videos": []}
+                channels[ch_id]["videos"].append({
+                    "id": r["vid_id"], "title": r["title"],
+                    "views": r["views"], "pub": r["pub"],
+                })
+                count += 1
+            total_found += count
+            if done % 30 == 0 or done == total:
+                print(
+                    f"  [{done}/{total}] canali: {len(channels)} | video: {total_found}",
+                    file=sys.stderr,
+                )
+
+    print(
+        f"  ✅ {len(channels)} canali unici con video recenti\n",
+        file=sys.stderr,
+    )
+    return channels
+
+
+# ─── Phase 2: Conta video per canale via scrapetube (0 API) ─────────
+def phase2_count_videos(
+    channel_ids: dict[str, dict], max_videos: int, min_total_views: int
+) -> dict[str, dict]:
+    """
+    Per ogni canale: conta video, somma views, raccogli sample.
+    Skip immediato se video_count > max_videos.
+    Usa ThreadPool per velocizzare.
+    Costo: ZERO API.
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    print(
+        f"📊 Fase 2: Analisi {len(channel_ids)} canali (scrapetube, 8 thread)...",
+        file=sys.stderr,
+    )
+    limit = max_videos + 1
+    # half_views rimosso
+
+    def _check_channel(cid_info):
+        cid, info = cid_info
+        import threading
+        result = [None]
+        error = [None]
+
+        def _fetch():
+            try:
+                result[0] = list(scrapetube.get_channel(cid, limit=limit, sleep=0))
+            except Exception as e:
+                error[0] = e
+
+        t = threading.Thread(target=_fetch, daemon=True)
+        t.start()
+        t.join(timeout=20)
+        if t.is_alive() or error[0] is not None:
+            return None
+        vids = result[0]
+        if vids is None:
+            return None
+        if len(vids) >= limit:
+            return None
+        total_views = 0
+        samples = []
+        for v in vids:
+            vc = parse_view_count(
+                v.get("viewCountText", {}).get("simpleText", "")
+            )
+            total_views += vc
+            if len(samples) < 5:
+                samples.append({
+                    "id": v.get("videoId", ""),
+                    "title": extract_title(v),
+                    "views": vc,
+                    "pub": v.get("publishedTimeText", {}).get("simpleText", ""),
+                })
+        # half_views filtro rimosso
+        info["video_count"] = len(vids)
+        info["total_views"] = total_views
+        info["samples"] = samples
+        return (cid, info)
+
+    passed: dict[str, dict] = {}
+    done = 0
+    total = len(channel_ids)
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = {
+            pool.submit(_check_channel, item): item
+            for item in channel_ids.items()
+        }
+        for fut in as_completed(futures):
+            done += 1
+            if done % 50 == 0 or done == total:
+                print(
+                    f"  [{done}/{total}] passati: {len(passed)}",
+                    file=sys.stderr,
+                )
+            result = fut.result()
+            if result:
+                passed[result[0]] = result[1]
+
+    print(
+        f"  ✅ {len(passed)} canali con ≤{max_videos} video\n",
+        file=sys.stderr,
+    )
+    return passed
+
+
+# ─── Phase 3: Dettagli finali via API (1 batch, ~3 unità) ───────────
+def phase3_api_details(channels: dict[str, dict], api_key: str, cfg: dict) -> list[Channel]:
+    """
+    UN solo batch API per ottenere iscritti + data creazione.
+    Costo: ~3 unità per ≤50 canali. Se >50, pochi batch da 3 unità ciascuno.
+    """
+    from googleapiclient.discovery import build
+
+    ids = list(channels.keys())
+    if not ids:
+        return []
+
+    print(
+        f"🔑 Fase 3: Dettagli API per {len(ids)} canali (~{(len(ids) // 50 + 1) * 3} unità)...",
+        file=sys.stderr,
+    )
+
+    yt = build("youtube", "v3", developerKey=api_key)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=cfg["max_age_days"])
+    result: list[Channel] = []
+    skip_old = 0
+    skip_subs = 0
+    # skip_views rimosso: filtro views non piu usato
+
+    for i in range(0, len(ids), 50):
+        batch = ids[i : i + 50]
+        try:
+            r = (
+                yt.channels()
+                .list(part="snippet,statistics", id=",".join(batch))
+                .execute()
+            )
+        except Exception as e:
+            print(f"  ⚠️ Errore API: {e}", file=sys.stderr)
+            continue
+
+        for item in r.get("items", []):
+            cid = item["id"]
+            sn = item["snippet"]
+            st = item["statistics"]
+
+            # Data creazione
+            try:
+                created = dateutil_parser.parse(sn["publishedAt"])
+                if created.tzinfo is None:
+                    created = created.replace(tzinfo=timezone.utc)
+            except Exception:
+                continue
+
+            if created < cutoff:
+                skip_old += 1
+                continue
+
+            subs = int(st.get("subscriberCount", 0))
+            if st.get("hiddenSubscriberCount"):
+                subs = 0
+            if subs < cfg["min_subs"]:
+                skip_subs += 1
+                continue
+
+            age_days = (datetime.now(timezone.utc) - created).days
+            info = channels.get(cid, {})
+
+            ch = Channel(
+                channel_id=cid,
+                name=sn.get("title", info.get("name", "")),
+                handle=sn.get("customUrl", ""),
+                subs=subs,
+                video_count=info.get("video_count", int(st.get("videoCount", 0))),
+                total_views=info.get(
+                    "total_views", int(st.get("viewCount", 0))
+                ),
+                created_at=created,
+                age_days=age_days,
+                description=(sn.get("description") or "")[:500].replace("\n", " "),
+                country=sn.get("country", ""),
+                sample_videos=info.get("samples", info.get("videos", []))[:5],
+            )
+            ch.calc()
+
+            # Calcola faceless score
+            titles = [v.get("title", "") for v in ch.sample_videos]
+            ch.faceless = faceless_score(ch.name, ch.description, titles)
+
+            result.append(ch)
+
+    # Ordina: faceless first (>= 15), poi per score
+    result.sort(key=lambda c: (c.faceless >= 15, c.score), reverse=True)
+
+    units = (len(ids) // 50 + 1) * 3
+    print(
+        f"  ✅ {len(result)} canali breakout confermati (API: ~{units} unità usate)\n",
+        file=sys.stderr,
+    )
+    print(
+        f"  ❌ Scartati: {skip_old} troppo vecchi | {skip_subs} pochi iscritti",
+        file=sys.stderr,
+    )
+    print(file=sys.stderr)
+    return result
+
+
+# ─── Output ──────────────────────────────────────────────────────────
+def write_txt(channels: list[Channel], path: str):
+    lines = []
+    faceless_count = sum(1 for c in channels if c.faceless >= 15)
+    lines.append(
+        f"🚀 YOUTUBE BREAKOUT CHANNELS — {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+    )
+    lines.append("   Canali nuovi con pochi video e grande successo")
+    lines.append(f"   Trovati: {len(channels)} ({faceless_count} probabilmente faceless)")
+    lines.append("=" * 80)
+    lines.append("")
+
+    for i, ch in enumerate(channels, 1):
+        url = (
+            f"https://youtube.com/{ch.handle}"
+            if ch.handle
+            else f"https://youtube.com/channel/{ch.channel_id}"
+        )
+        lines.append(f"#{i:02d} | {ch.name}")
+        lines.append(f"    {url}")
+        lines.append(
+            f"    📊 {fmt(ch.subs)} iscritti | {ch.video_count} video | {fmt(ch.total_views)} views totali"
+        )
+        lines.append(f"    📈 {fmt(int(ch.avg_views))} views/video | Score: {ch.score}/100")
+        # Tag faceless
+        if ch.faceless >= 40:
+            lines.append(f"    🤖 FACELESS (score: {ch.faceless})")
+        elif ch.faceless >= 15:
+            lines.append(f"    🤖 Probabilmente faceless (score: {ch.faceless})")
+        lines.append(
+            f"    📅 Creato {ch.age_days} giorni fa ({ch.created_at.strftime('%Y-%m-%d') if ch.created_at else '?'})"
+        )
+        if ch.country:
+            lines.append(f"    🌍 {ch.country}")
+        if ch.description:
+            lines.append(f"    📝 {ch.description[:120]}...")
+        if ch.sample_videos:
+            for v in ch.sample_videos[:3]:
+                vw = fmt(v["views"]) if v.get("views") else "?"
+                lines.append(f"    🎬 {v['title'][:65]} ({vw} views)")
+        lines.append("")
+
+    Path(path).write_text("\n".join(lines), encoding="utf-8")
+    print(f"💾 Salvato: {path}", file=sys.stderr)
+
+
+# ─── Main ────────────────────────────────────────────────────────────
+def main():
+    p = argparse.ArgumentParser(
+        description="🚀 Trova canali YouTube breakout (nuovi + virali) — quasi 0 API"
+    )
+    p.add_argument("-o", "--output", default="breakout.txt", help="File output .txt")
+    p.add_argument(
+        "--max-age-days",
+        type=int,
+        default=DEFAULT_MAX_AGE_DAYS,
+        help=f"Età max canale in giorni (default: {DEFAULT_MAX_AGE_DAYS})",
+    )
+    p.add_argument(
+        "--max-videos",
+        type=int,
+        default=DEFAULT_MAX_VIDEOS,
+        help=f"Max video del canale (default: {DEFAULT_MAX_VIDEOS})",
+    )
+    p.add_argument(
+        "--min-subs",
+        type=int,
+        default=DEFAULT_MIN_SUBS,
+        help=f"Min iscritti (default: {DEFAULT_MIN_SUBS})",
+    )
+    p.add_argument(
+        "--min-views-per-video",
+        type=int,
+        default=DEFAULT_MIN_VIEWS_PER_VIDEO,
+        help=f"Min views medie per video (default: {DEFAULT_MIN_VIEWS_PER_VIDEO})",
+    )
+    p.add_argument(
+        "--min-total-views",
+        type=int,
+        default=DEFAULT_MIN_TOTAL_VIEWS,
+        help=f"Min views totali (default: {DEFAULT_MIN_TOTAL_VIEWS})",
+    )
+    p.add_argument("--api-key", default=API_KEY, help="YouTube API key")
+    p.add_argument(
+        "--search-limit",
+        type=int,
+        default=20,
+        help="Risultati per query di ricerca (default: 20)",
+    )
+    p.add_argument(
+        "--extra-queries",
+        help="Query aggiuntive separate da virgola",
+    )
+    args = p.parse_args()
+
+    cfg = {
+        "max_age_days": args.max_age_days,
+        "max_videos": args.max_videos,
+        "min_subs": args.min_subs,
+        "min_views_per_video": 0,  # disabilitato: basta il pre-filtro
+        "min_total_views": args.min_total_views,
+    }
+
+    print("🚀 YouTube Breakout Channel Scanner", file=sys.stderr)
+    print("─" * 50, file=sys.stderr)
+    print(
+        f"  Max età: {cfg['max_age_days']}gg | Max video: {cfg['max_videos']}",
+        file=sys.stderr,
+    )
+    print(
+        f"  Min iscritti: {fmt(cfg['min_subs'])} | Min views/video: {fmt(cfg['min_views_per_video'])}",
+        file=sys.stderr,
+    )
+    print("─" * 50 + "\n", file=sys.stderr)
+
+    queries = list(BROAD_QUERIES)
+    if args.extra_queries:
+        queries.extend([q.strip() for q in args.extra_queries.split(",") if q.strip()])
+
+    # Phase 1: scoperta (scrapetube, 0 API)
+    discovered = phase1_discover(
+        queries,
+        results_per_query=args.search_limit,
+        max_months=(cfg["max_age_days"] // 30) + 1,
+    )
+
+    if not discovered:
+        print("⚠️ Nessun canale trovato nella fase 1.", file=sys.stderr)
+        return
+
+    # Pre-filtro: tieni solo canali con almeno 1 video > 10K views dalla search
+    promising = {}
+    for cid, info in discovered.items():
+        max_vid_views = max((v.get("views", 0) for v in info["videos"]), default=0)
+        if max_vid_views >= 10_000:
+            promising[cid] = info
+    print(
+        f"🎯 Pre-filtro: {len(promising)}/{len(discovered)} canali con almeno 1 video >10K views (unico filtro views)\n",
+        file=sys.stderr,
+    )
+
+    if not promising:
+        print("⚠️ Nessun canale con video ad alte views.", file=sys.stderr)
+        return
+
+    # Phase 2: conta video (scrapetube, 0 API)
+    filtered = phase2_count_videos(
+        promising, cfg["max_videos"], cfg["min_total_views"]
+    )
+
+    if not filtered:
+        print("⚠️ Nessun canale con pochi video e views sufficienti.", file=sys.stderr)
+        return
+
+    # Phase 3: dettagli finali (API, ~3 unità)
+    breakout = phase3_api_details(filtered, args.api_key, cfg)
+
+    # Output
+    if breakout:
+        print(f"✅ Trovati {len(breakout)} canali breakout!\n", file=sys.stderr)
+        for i, ch in enumerate(breakout[:20], 1):
+            url = (
+                f"https://youtube.com/{ch.handle}"
+                if ch.handle
+                else f"https://youtube.com/channel/{ch.channel_id}"
+            )
+            fl = " 🤖" if ch.faceless >= 15 else ""
+            spd = int(ch.subs / ch.age_days) if ch.age_days > 0 else 0
+            print(
+                f"  #{i:02d} {ch.name:<35} {fmt(ch.subs):>7} sub | "
+                f"{ch.video_count:>2} vid | +{spd:>3} sub/gg | Score {ch.score}{fl}",
+                file=sys.stderr,
+            )
+    else:
+        print(
+            "⚠️ Nessun canale breakout trovato. Prova filtri meno restrittivi.",
+            file=sys.stderr,
+        )
+
+    write_txt(breakout, args.output)
+
+
+if __name__ == "__main__":
+    main()

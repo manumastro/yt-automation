@@ -1,0 +1,36 @@
+Resoconto stato attuale — finestexplainerr
+Aggiornato: 2026-05-26
+
+Questo file non è più uno storico monolitico.
+Serve come dashboard corrente del canale e riflette solo lo stato attuale delle produzioni presenti in `output/finestexplainerr/production/`.
+
+Produzioni rilevate: 2
+
+1) 2026-05-24_secret-government-bunkers
+Stato: completata / pronta per produzione asset
+Dettaglio: `output/finestexplainerr/production/2026-05-24_secret-government-bunkers/resoconto_produzione_it.txt`
+File chiave presenti:
+- script_final.md
+- production_pack_it.md
+- image_prompts_scene15_plus.txt
+
+2) 2026-05-25_ancient-tunnel-jerusalem
+Stato: packaging completato / in attesa di production pack finale
+Dettaglio: `output/finestexplainerr/production/2026-05-25_ancient-tunnel-jerusalem/resoconto_produzione_it.txt`
+File chiave presenti:
+- script.md
+- title_options.md
+- qa_checklist.md
+
+Stato sintetico canale:
+- CLERK: completato
+- NICHE BENDING: completato
+- AI NEWS: completato
+- Produzioni completate o avviate: 2
+- Video più avanzato: `2026-05-24_secret-government-bunkers`
+- Prossimo step operativo più vicino: chiudere pack finale della produzione `2026-05-25_ancient-tunnel-jerusalem`
+
+Regola d'uso:
+- Questo file resta una vista corrente del canale
+- I dettagli operativi vanno nei singoli `resoconto_produzione_it.txt` dentro ogni cartella produzione
+- Se cambiano le produzioni attive/completate, questo file va aggiornato per riflettere lo stato reale corrente

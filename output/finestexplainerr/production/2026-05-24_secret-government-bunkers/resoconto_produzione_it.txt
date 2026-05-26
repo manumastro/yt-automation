@@ -1,0 +1,24 @@
+Resoconto produzione — Secret Government Bunkers
+Cartella: output/finestexplainerr/production/2026-05-24_secret-government-bunkers/
+Stato: completata / pronta per produzione asset
+
+Deliverable presenti:
+- outline.md
+- script.md
+- script_final.md
+- title_options.md
+- qa_checklist.md
+- poet_notes.md
+- production_pack_it.md
+- image_prompts_scene15_plus.txt
+
+Sintesi:
+- Primo video prodotto per il canale finestexplainerr nella nicchia "Secret Cities"
+- Pipeline completa eseguita fino a POET
+- Production pack già generato
+- Materiale pronto per voiceover, immagini e packaging finale
+
+Prossimi step operativi:
+1. Generare/registrare voiceover dal production_pack_it.md
+2. Produrre visual usando gli image prompts
+3. Assemblare video finale e testare titolo/thumbnail
