@@ -13,7 +13,6 @@ Deliverable presenti:
 - image_prompts_scene15_plus.txt
 - tts_gemini_scene01_plus/manifest.json
 - tts_gemini_scene01_plus/scene_XX.wav
-- tts_gemini_scene01_plus/scene_XX_merged.wav
 
 Sintesi:
 - Seconda produzione avviata dopo decisione editoriale di variare rispetto al tema bunker
@@ -21,9 +20,9 @@ Sintesi:
 - Passaggio POET completato
 - Production pack generato nel nuovo formato solo immagine + audio
 - Workflow Gemini TTS eseguito su 15 scene
-- Per le scene chunkate sono stati creati anche file `_merged.wav` per semplificare il montaggio
+- Le scene chunkate sono state consolidate nei file finali `scene_XX.wav`, mantenendo una struttura audio pulita per il montaggio
 
 Prossimi step operativi:
 1. Generare le immagini scena-per-scena usando `image_prompts_scene15_plus.txt`
-2. Scegliere i file audio finali (`scene_XX.wav` singoli o `scene_XX_merged.wav` dove necessario)
+2. Usare i file audio finali `scene_XX.wav` già consolidati scena per scena
 3. Assemblare video finale e rifinire pacing audiovisivo

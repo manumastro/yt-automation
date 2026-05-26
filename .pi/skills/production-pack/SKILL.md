@@ -131,11 +131,12 @@ Formato:
 Formato obbligatorio riga:
 
 ```text
-[SCENE 01 - <nome scena>] <prompt finale combinato immagine>
+[TRACKING ONLY — IGNORE THIS LABEL IN IMAGE GENERATION: SCENE 01 - <nome scena>] <prompt finale combinato immagine>
 ```
 
 Regola importante:
 - la label iniziale serve solo come identificatore umano / parsing
+- deve dire esplicitamente al modello di ignorarla
 - il vero prompt inizia subito dopo la label
 - la label deve essere breve, neutra e non descrittiva oltre il nome scena, per minimizzare qualsiasi impatto se il testo viene incollato interamente
 
