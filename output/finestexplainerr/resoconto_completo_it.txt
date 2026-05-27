@@ -1,5 +1,5 @@
 Resoconto stato attuale — finestexplainerr
-Aggiornato: 2026-05-26
+Aggiornato: 2026-05-27
 
 Questo file non è più uno storico monolitico.
 Serve come dashboard corrente del canale e riflette solo lo stato attuale delle produzioni presenti in `output/finestexplainerr/production/`.
@@ -15,7 +15,7 @@ File chiave presenti:
 - image_prompts_scene15_plus.txt
 
 2) 2026-05-25_ancient-tunnel-jerusalem
-Stato: production pack + TTS Gemini completati / pronta per immagini e assemblaggio
+Stato: video completato
 Dettaglio: `output/finestexplainerr/production/2026-05-25_ancient-tunnel-jerusalem/resoconto_produzione_it.txt`
 File chiave presenti:
 - script_final.md
@@ -29,7 +29,7 @@ Stato sintetico canale:
 - AI NEWS: completato
 - Produzioni completate o avviate: 2
 - Video più avanzato: `2026-05-25_ancient-tunnel-jerusalem`
-- Prossimo step operativo più vicino: generare immagini e assemblare la produzione `2026-05-25_ancient-tunnel-jerusalem`
+- Prossimo step operativo più vicino: pubblicazione / packaging finale della produzione `2026-05-25_ancient-tunnel-jerusalem`
 
 Regola d'uso:
 - Questo file resta una vista corrente del canale

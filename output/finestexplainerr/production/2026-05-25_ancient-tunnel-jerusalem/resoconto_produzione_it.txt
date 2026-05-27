@@ -1,6 +1,6 @@
 Resoconto produzione — Ancient Tunnel Mystery in Jerusalem
 Cartella: output/finestexplainerr/production/2026-05-25_ancient-tunnel-jerusalem/
-Stato: production pack + TTS Gemini completati / pronta per immagini e assemblaggio
+Stato: video completato
 
 Deliverable presenti:
 - outline.md
@@ -21,8 +21,10 @@ Sintesi:
 - Production pack generato nel nuovo formato solo immagine + audio
 - Workflow Gemini TTS eseguito su 15 scene
 - Le scene chunkate sono state consolidate nei file finali `scene_XX.wav`, mantenendo una struttura audio pulita per il montaggio
+- Immagini e montaggio completati
+- Video finale Jerusalem completato
 
 Prossimi step operativi:
-1. Generare le immagini scena-per-scena usando `image_prompts_scene15_plus.txt`
-2. Usare i file audio finali `scene_XX.wav` già consolidati scena per scena
-3. Assemblare video finale e rifinire pacing audiovisivo
+1. Archiviare o esportare il master finale nella destinazione pubblicazione
+2. Se necessario, aggiornare metadata pubblicazione (titolo, descrizione, thumbnail, scheduling)
+3. Riutilizzare il workflow consolidato per la prossima produzione
