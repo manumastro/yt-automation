@@ -19,6 +19,9 @@ Trasforma l'analisi CLERK in output editoriali pronti per produzione.
    - obbligatori: `script_blueprint.md`, `hook_playbook.md`, `sop_ai.md`
    - utili: `transcript_database.csv`, `video_list.md`
 2. (Opzionale) cartella NICHE BENDING: `output/<canale>/niche-bending/`
+
+   **Per canali con Niche Bending già consolidato** (es. finestexplainerr):
+   Preferisci topic da `ideas/evergreen_topic_ideas.md` (Niche Bending come driver principale). La cartella `niche-bending/` è solo archivio.
 3. Numero script da produrre (default: 1)
 4. Lingua output script (default: EN, se non specificata)
 

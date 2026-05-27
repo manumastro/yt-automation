@@ -4,71 +4,60 @@
 **Video prodotti:** 2 (Secret Government Bunkers — 2026-05-24; Ancient Tunnel Mystery in Jerusalem — 2026-05-25)  
 **Scopo:** Classifica chiara e mantenibile dei prossimi video da produrre. Singola fonte di verità per il flusso di produzione.
 
+**⚠️ FILOSOFIA EDITORIALE (aggiornata):**  
+**Niche Bending è il padrone.** Le idee evergreen sviluppate in `secret_cities_strategy.md` e `evergreen_topic_ideas.md` sono il cuore dell'identità del canale.  
+AI NEWS è un feeder secondario: i suoi topic entrano solo se mappano fortemente su uno dei 5 pillar e migliorano la varietà senza snaturare il tono misterioso.
+
 ---
 
 ## Decisione editoriale corrente (2026-05-27)
 
-**Prossimo topic da produrre:** **The Hidden White House Fortress**
+**Stato White House:**  
+**Messo in standby dall'utente.** Il topic non ha generato il tono misterioso e oscuro desiderato (non "arriva da qualche parte"). Il framing si è impantanato troppo nella cronaca politica e nelle cause legali invece che nella profondità inquietante di infrastrutture segrete.
 
-**Motivazione utente:**  
-FinestExplainer deve consolidarsi nella lane **mysterious secret infrastructure / hidden government architecture**, in continuità con i video bunker e con tutto il filone di spazi nascosti, strutture sotterranee e sistemi governativi opachi.  
+**Nuova direzione prioritaria:**  
+Tornare al feeling validato dal video **Secret Government Bunkers**:  
+- Infrastrutture nascoste con peso storico (Cold War, continuità del potere, "sotto la superficie normale c'è un altro mondo in attesa")  
+- Tono puro mystery + leggera inquietudine  
+- Luoghi che esistono da decenni e continuano a esistere in silenzio
 
-Per questo **The Hidden White House Fortress** resta prioritario: non va trattato come political explainer puro, ma come **video di infrastruttura segreta governativa**, dove la tensione nasce dal contrasto tra facciata pubblica e funzione nascosta.  
-
-Il topic unisce:
-- contrasto forte tra superficie pubblica e profondità nascosta
-- hook immediato e ad alta curiosità
-- continuità diretta con il gusto del canale per bunker, spazi sotterranei e architetture di continuità del potere
-
-**Angle narrativo consigliato:**  
-**Public ballroom, private bunker** — partire dal contrasto tra immagine istituzionale e struttura nascosta, mostrando che la vera storia non è la politica del progetto ma l’architettura segreta che protegge il governo quando tutto il resto fallisce.
-
-**Nota di brand esplicita:**  
-Per `finestexplainerr`, il filone dominante deve essere riconoscibile come **mysterious secret infrastructure / hidden government architecture**. Anche i topic news-driven vanno rifiniti con il feeling dei bunker: superficie ordinaria, funzione nascosta, protezione estrema, continuità del potere, profondità invisibile.
+**Prossimo topic consigliato (da Niche Bending):**  
+**The USSR's Secret Cities** o **Europe’s Doomsday Bunkers (Regan Vest)** — entrambi hanno altissimo fit con il tono del bunker originale.
 
 ---
 
-## Regole di priorità (definite dal progetto)
+## Regole di priorità (Niche Bending prima di tutto)
 
-- Priorità alta ai topic da **AI NEWS** con score ≥ 8.5
-- Mix consigliato: ~60% mystery-infrastructure / 40% cyber-threat (da note AI NEWS)
-- Brand lane prioritaria: **secret infrastructure / hidden government architecture / underground systems**
-- Anche quando il topic nasce da news politiche o legali, il framing deve restare su **struttura nascosta, funzione, protezione, continuità governativa, spazi segreti**
-- Evitare framing da political commentary puro: il canale deve essere riconoscibile per il filone misterioso-infrastrutturale
-- I topic evergreen da Niche Bending entrano in coda quando non ci sono news forti
-- Dopo ogni nuovo run di AI NEWS → rivalutare e aggiornare questa coda
-- Quando un topic passa in SCRIPT STEALING → aggiornare lo stato
-- **Override editoriali** per varietà tematica o strategia di canale sono documentati nella sezione "Decisione editoriale" sopra e hanno precedenza sul puro ranking AI per il posizionamento nella coda di produzione.
+1. **Evergreen da Niche Bending** (`evergreen_topic_ideas.md`) — priorità massima di default. Sono il DNA del canale.
+2. **Topic AI NEWS che mappano perfettamente** su uno dei 5 pillar (soprattutto Ghost Towns, Underground/Secret Infrastructure, Secret Cities) **e** hanno forte potenziale visivo/misterioso.
+3. **Topic AI NEWS deboli sul pillar fit** — bassa priorità o scartati, anche se hanno score alto.
+4. **Cyber-threat** (Iran hackers, undersea cables, ecc.) — accettati solo come varietà (max 20-25% del catalogo), mai come lane principale.
 
----
+**Mix target a regime:**
+- 70-80% Evergreen / Pillar-driven (Niche Bending)
+- 20-30% Iniezioni timely da AI NEWS (solo quando eccellenti)
 
-## Coda di produzione (ordinata per flusso di produzione attuale)
-
-| Pos (flusso) | Topic | Fonte | AI Score | Stato | Angle consigliato | Note / Riferimenti |
-|--------------|-------|-------|----------|-------|-------------------|--------------------|
-| 1 | **The Hidden White House Fortress** (ballroom + bunker) | AI NEWS | **9.1** | In produzione (POET completato) | Public ballroom, private bunker (hidden government architecture) | Cartella: `production/2026-05-27_hidden-white-house-fortress/`. Da trattare esplicitamente come secret infrastructure / hidden government architecture, non come political explainer puro. |
-| 2 | Lost Cold War Bunker Found Under Scarborough Castle | AI NEWS | 8.4 | Backlog prioritario | A bunker forgotten under tourists’ feet | Fit molto alto col brand: bunker reale, riscoperta, spazio nascosto sotto luogo storico. |
-| 3 | The Undersea Cable Cutter Problem | AI NEWS | 8.6 | Backlog alto | The physical internet can be cut | Meno bunker-like, ma forte come infrastructure threat / hidden systems story. |
-| 4 | Inside Europe’s Doomsday Bunkers (Regan Vest + others) | AI NEWS | 8.2 | Backlog alto | Museums of fear — old bunkers, new anxieties | Fit diretto col filone bunker / continuity spaces. |
-| 5 | 4,000-Year-Old Tunnel Network in Inner Mongolia | AI NEWS | 7.6 | Backlog mystery fit | Ancient defensive engineering ahead of its time | Fit forte col lato tunnel / hidden underground systems del canale. |
-| 6 | The Ghost Town That Reappeared from Lake Mead (St. Thomas) | AI NEWS | 7.8 | Backlog mystery fit | A town drowned, then resurrected | Forte visuale mystery-place, meno government ma coerente con hidden places. |
-| 7 | Iran-Linked Hackers vs US Infrastructure PLCs | AI NEWS | 9.0 | Backlog cyber lane | How attackers touch real-world controls (HMI/SCADA) | Score altissimo, ma meno coerente col filone principale secret infrastructure / hidden spaces. |
-| 8 | Cyber War Spillover: Iran Nexus Tactics Escalation | AI NEWS | 8.1 | Backlog cyber lane | From espionage to disruption | Follow-up naturale del #7. |
-| 9 | Near-Ghost Town Evacuation: Campo Wildfire Case | AI NEWS | 6.9 | Bassa priorità | How a town of 60 almost disappeared in one weekend | Event-driven, meno evergreen e meno allineato al core hidden-infrastructure. |
+**Guardrail tonale:**
+- Il video deve sempre dare la sensazione che "c'è qualcosa sotto / c'è qualcosa che non è mai sparito".
+- Evitare topic che restano troppo in superficie (cronaca politica, legal battles, news del giorno senza profondità storica o misteriosa).
 
 ---
 
-## Evergreen forti da Niche Bending (da considerare quando news sono deboli)
+## Coda di produzione (ordinata per priorità attuale)
 
-Queste idee sono già sviluppate in `niche-bending/topic_ideas.md` e possono entrare in coda in qualsiasi momento:
+| Pos | Topic | Fonte | Pillar | Fit tono bunker | Stato | Note / Riferimenti |
+|-----|-------|-------|--------|------------------|-------|--------------------|
+| 1 | **The USSR's Secret Cities** (Closed cities ZATO, Yamantau, Pripyat ecc.) | Niche Bending | Secret / Invisible Cities | **Eccellente** | Backlog prioritario | Uno dei più oscuri e "bunker-like" in assoluto. Hook fortissimo ("non esisteva sulle mappe"). Da sviluppare per primo tra gli evergreen. |
+| 2 | **Inside Europe’s Doomsday Bunkers** (Regan Vest + altri) | AI NEWS + Niche Bending | Underground Cities | **Molto alto** | Backlog alto | "Museums of fear". Capsule del tempo. Fit quasi identico al video bunker USA già prodotto. Ottima varietà geografica. |
+| 3 | **Underground Cities Beneath Major Cities** (Seattle, NYC, Chicago, Montreal) | Niche Bending | Underground Cities | Alto | Backlog forte | Relatability altissima + mistero "sotto i tuoi piedi". |
+| 4 | **Lost Cold War Bunker Found Under Scarborough Castle** | AI NEWS | Underground Cities | Alto | Backlog | Scoperta fisica + bunker sigillato sotto castello turistico. Molto visivo. |
+| 5 | **Hashima Island (Battleship Island)** | Niche Bending | Ghost Towns | Alto | Backlog | Densità estrema + abbandono totale. Visuali iconiche. Può essere video standalone o parte di "densità impossibili". |
+| 6 | **The Islands That Are Illegal to Visit** | Niche Bending | Ghost Towns / Forbidden | Medio-Alto | Backlog | Forbidden fruit forte. Meno "infrastruttura" ma alto engagement. |
+| 7 | **Abandoned Luxury Resorts From the Golden Age** (The Pines, Dreamland ecc.) | Niche Bending | Modern Abandoned Places | Medio | Backlog varietà | Nostalgia + decadenza. Buono per cambiare registro dopo diversi bunker/underground. |
+| 8 | **The Undersea Cable Cutter Problem** | AI NEWS | — | Basso (tech threat) | Backlog basso | Meno misterioso, più "infrastructure vulnerability". Considerare solo per varietà cyber. |
+| 9 | **Iran-Linked Hackers vs US Infrastructure** | AI NEWS | — | Basso | Backlog cyber | Score alto ma esce dal filone principale mystery-places. |
 
-- Centralia, Pennsylvania (la città che ha ispirato Silent Hill) — Ghost Towns
-- The USSR’s Secret Cities (città cancellate dalle mappe sovietiche)
-- Underground Cities Beneath Major Cities (Seattle, NYC, Chicago, ecc.)
-- Hashima Island (Battleship Island) — densità estrema + abbandono
-- The Islands That Are Illegal to Visit (North Sentinel, ecc.)
-
-Queste hanno priorità più bassa rispetto ai topic AI NEWS con score alto, a meno di un nuovo run che le renda attuali.
+**Nota:** La White House Fortress è stata rimossa dalla coda attiva (standby deciso dall'utente per mancanza di profondità misteriosa).
 
 ---
 
@@ -76,39 +65,38 @@ Queste hanno priorità più bassa rispetto ai topic AI NEWS con score alto, a me
 
 | Data | Titolo / Topic | Cartella produzione | Note |
 |------|----------------|---------------------|------|
-| 2026-05-24 | The Secret Government Bunkers Explained In 8 Minutes | `production/2026-05-24_secret-government-bunkers/` | Primo video della nicchia "Secret Cities". Tutti i 5 protocolli eseguiti. |
+| 2026-05-24 | The Secret Government Bunkers Explained In 8 Minutes | `production/2026-05-24_secret-government-bunkers/` | Primo video della nicchia "Secret Cities". Ha validato il tono misterioso/oscuro desiderato. |
 | 2026-05-25 | Ancient Tunnel Mystery in Jerusalem | `production/2026-05-25_ancient-tunnel-jerusalem/` | Secondo video completato. Workflow completo: POET + production pack + TTS + immagini + montaggio. |
 
 ---
 
 ## Come mantenere questo file (flusso operativo)
 
-1. Dopo ogni esecuzione del protocollo **AI NEWS**:
-   - Aggiungere/aggiornare i nuovi topic nella tabella sopra
-   - Rivalutare l’ordine in base allo score + eventuali decisioni editoriali per varietà
+1. **Prima di tutto consulta** `secret_cities_strategy.md` + `evergreen_topic_ideas.md`.
+2. Quando arriva un nuovo run di **AI NEWS**:
+   - Valuta ogni topic prima di tutto sul **pillar fit** e sul **tono bunker/mysterious**.
+   - Aggiungi solo quelli che superano la soglia.
+   - Non spingere mai un topic solo perché ha score alto.
+3. Quando si decide di produrre un evergreen:
+   - Spostalo in cima
+   - Crea la cartella `production/<data>_<slug>/`
+   - Registra la decisione nella sezione "Decisione editoriale"
+4. Dopo ogni video finito:
+   - Sposta nella tabella "Video completati"
+   - Aggiorna contatore
+   - Valuta se serve una nuova decisione editoriale (es. alternare un ghost town dopo due underground)
 
-2. Quando si inizia un nuovo video:
-   - Spostare il topic in cima alla coda
-   - Cambiare stato in "In produzione"
-   - Creare la cartella in `production/<data>_<slug>/`
-   - Registrare la decisione (se override) nella sezione "Decisione editoriale"
-
-3. Quando il video è finito:
-   - Spostare la riga nella sezione "Video completati"
-   - Aggiornare il contatore in alto
-   - Valutare se serve una nuova decisione editoriale per il successivo
-
-4. Riferimenti rapidi:
-   - Dettagli topic e score → `topic_shortlist.md`
-   - Angoli narrativi → `news_angles.md`
-   - Fonti e verifica → `trend_sources.md`
-   - Idee evergreen → `niche-bending/topic_ideas.md`
+**Riferimenti rapidi:**
+- Strategia e pillar → `secret_cities_strategy.md` (documento padrone)
+- Tutte le idee sviluppate → `evergreen_topic_ideas.md`
+- Eventuali ricerche AI NEWS future → crea nuovi file datati solo se servono (e solo dopo aver verificato il fit con la strategia Niche Bending)
 
 ---
 
-**Prossima azione consigliata (2026-05-27):**  
-Lanciare **PRODUCTION PACK** su `production/2026-05-27_hidden-white-house-fortress/` usando `script_final.md` come base.
+**Prossima azione consigliata:**  
+Scegliere tra **USSR's Secret Cities** e **Europe’s Doomsday Bunkers**.  
+Una volta scelto, lanciare **SCRIPT STEALING** usando il blueprint del canale + le indicazioni di tono in `secret_cities_strategy.md`.
 
 ---
 
-*File mantenuto manualmente come estensione del protocollo AI NEWS. Non sostituisce né modifica i file raw generati dal protocollo (topic_shortlist.md, news_angles.md, trend_sources.md). Le decisioni editoriali di flusso vengono documentate qui.*
+*File mantenuto manualmente. La fonte di verità strategica è ora `secret_cities_strategy.md` (Niche Bending). AI NEWS è subordinata.*

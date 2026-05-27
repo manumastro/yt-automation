@@ -64,25 +64,28 @@ Seleziona top topic (default: 10).
 
 ### FASE 5 — Output file
 
-Crea in `output/<canale>/ideas/`:
+Crea snapshot datati in `output/<canale>/ideas/` (o in una sottocartella `ai-news-runs/` se preferisci):
 
-1. `topic_shortlist.md`
+1. `topic_shortlist_YYYY-MM-DD.md`
    - Top topic con score + rationale
    - Hook suggestion per ciascuno
 
-2. `trend_sources.md`
+2. `trend_sources_YYYY-MM-DD.md`
    - Elenco fonti/URL usati
    - Stato verifica (verified / partial / weak)
 
-3. `news_angles.md`
+3. `news_angles_YYYY-MM-DD.md`
    - 2-3 angoli narrativi per ogni topic top
    - Nota su quale angolo è migliore per SCRIPT STEALING
 
-## Output attesi
+**Nota per canali maturi con Niche Bending già eseguito** (es. finestexplainerr):
+Questi file sono **supporto secondario**. La direzione principale viene da `ideas/secret_cities_strategy.md` + `ideas/evergreen_topic_ideas.md`. I topic AI NEWS devono passare il filtro dei pillar prima di entrare in production queue.
 
-- `output/<canale>/ideas/topic_shortlist.md`
-- `output/<canale>/ideas/trend_sources.md`
-- `output/<canale>/ideas/news_angles.md`
+## Output attesi (esempio)
+
+- `output/<canale>/ideas/topic_shortlist_2026-05-24.md`
+- `output/<canale>/ideas/trend_sources_2026-05-24.md`
+- `output/<canale>/ideas/news_angles_2026-05-24.md`
 
 ## Regole operative
 

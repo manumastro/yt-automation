@@ -1,5 +1,12 @@
 # Outline — The Hidden White House Fortress
 
+> **STATO (2026-05-27):** Messo in **standby** dall'utente.  
+> Motivo: il tono non è risultato sufficientemente misterioso e oscuro come il video "Secret Government Bunkers".  
+> Il topic non "arriva da qualche parte" con lo stesso peso.  
+> Non procedere con SCRIPT STEALING / POET / Production Pack senza nuova decisione esplicita.
+
+---
+
 ## Topic selection
 
 ### Candidate topics considered

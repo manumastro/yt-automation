@@ -236,6 +236,10 @@ Al termine, mostra all'utente un riepilogo:
    2. primary_sources.md — Database fonti primarie
    3. topic_ideas.md — Idee video per pilastro
 
+**Dopo il Niche Bending (per canali come finestexplainerr):**
+Una volta completato il bending, promuovi la strategia e le idee in `ideas/secret_cities_strategy.md` e `ideas/evergreen_topic_ideas.md`.
+La cartella `niche-bending/` diventa archivio di ricerca. La produzione futura si guida da `ideas/` (Niche Bending come driver principale).
+
 🏆 Top Niche Bend consigliato: {Nome}
 
 💡 Prossimi passi suggeriti:
