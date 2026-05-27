@@ -61,11 +61,12 @@ Each video is a **LISTICLE** of 5-8 items. Each item follows:
 - **AVOID:** Breaking the fourth wall (no "you might be wondering")
 
 ### Tone & Voice
-- **Tone:** Detached documentary narrator — omniscient, clinical, slightly ominous
-- **Vocabulary:** Accessible but precise. Use technical terms but immediately explain them.
-- **Complexity:** Middle school reading level for comprehension, PhD-level for specificity
-- **Sentence structure:** Short declarative sentences. Fragment for emphasis. Rarely complex.
-- **Emotional register:** Low affect, high content. Let the facts create the emotion.
+- **Tone (globale, per tutti i video):** Mistero investigativo + inquietudine sottile. Non solo "spiegare": far percepire che c’è un livello nascosto dietro la versione ufficiale.
+- **Angle fisso:** osservazione di un’anomalia (surface narrative vs hidden logic), anche quando il tema NON riguarda bunker/governo.
+- **Vocabulary:** Accessibile ma preciso. Alterna dati concreti a domande retoriche mirate.
+- **Sentence structure:** Frasi brevi, contrasti netti, pause implicite. Ritarda le rivelazioni chiave.
+- **Emotional register:** Lo spettatore deve finire informato ma vagamente inquietato.
+- **Guardrail:** evitare assoluti non verificabili; usare prudenza su claim controversi ("reportedly", "court filings suggest", "publicly confirmed remains limited").
 
 ### Content Pillars
 1. **Cyber Threats** — Viruses, malware, ransomware, hacks (~30%)

@@ -11,15 +11,20 @@
 **Prossimo topic da produrre:** **The Hidden White House Fortress**
 
 **Motivazione utente:**  
-Dopo il completamento di **Ancient Tunnel Mystery in Jerusalem**, il vincolo di varietà che aveva spinto a posticipare il topic White House è stato già soddisfatto.  
+FinestExplainer deve consolidarsi nella lane **mysterious secret infrastructure / hidden government architecture**, in continuità con i video bunker e con tutto il filone di spazi nascosti, strutture sotterranee e sistemi governativi opachi.  
 
-A questo punto torna prioritario il topic con score più alto del lotto, **The Hidden White House Fortress** (9.1), che unisce:
+Per questo **The Hidden White House Fortress** resta prioritario: non va trattato come political explainer puro, ma come **video di infrastruttura segreta governativa**, dove la tensione nasce dal contrasto tra facciata pubblica e funzione nascosta.  
+
+Il topic unisce:
 - contrasto forte tra superficie pubblica e profondità nascosta
 - hook immediato e ad alta curiosità
-- continuità con il gusto del canale per infrastrutture segrete e spazi sotterranei
+- continuità diretta con il gusto del canale per bunker, spazi sotterranei e architetture di continuità del potere
 
 **Angle narrativo consigliato:**  
-**Public ballroom, private bunker** — partire dal contrasto tra immagine istituzionale e struttura nascosta, mostrando come uno spazio apparentemente cerimoniale conviva con logiche di continuità governativa e protezione estrema.
+**Public ballroom, private bunker** — partire dal contrasto tra immagine istituzionale e struttura nascosta, mostrando che la vera storia non è la politica del progetto ma l’architettura segreta che protegge il governo quando tutto il resto fallisce.
+
+**Nota di brand esplicita:**  
+Per `finestexplainerr`, il filone dominante deve essere riconoscibile come **mysterious secret infrastructure / hidden government architecture**. Anche i topic news-driven vanno rifiniti con il feeling dei bunker: superficie ordinaria, funzione nascosta, protezione estrema, continuità del potere, profondità invisibile.
 
 ---
 
@@ -27,6 +32,9 @@ A questo punto torna prioritario il topic con score più alto del lotto, **The H
 
 - Priorità alta ai topic da **AI NEWS** con score ≥ 8.5
 - Mix consigliato: ~60% mystery-infrastructure / 40% cyber-threat (da note AI NEWS)
+- Brand lane prioritaria: **secret infrastructure / hidden government architecture / underground systems**
+- Anche quando il topic nasce da news politiche o legali, il framing deve restare su **struttura nascosta, funzione, protezione, continuità governativa, spazi segreti**
+- Evitare framing da political commentary puro: il canale deve essere riconoscibile per il filone misterioso-infrastrutturale
 - I topic evergreen da Niche Bending entrano in coda quando non ci sono news forti
 - Dopo ogni nuovo run di AI NEWS → rivalutare e aggiornare questa coda
 - Quando un topic passa in SCRIPT STEALING → aggiornare lo stato
@@ -38,15 +46,15 @@ A questo punto torna prioritario il topic con score più alto del lotto, **The H
 
 | Pos (flusso) | Topic | Fonte | AI Score | Stato | Angle consigliato | Note / Riferimenti |
 |--------------|-------|-------|----------|-------|-------------------|--------------------|
-| 1 | **The Hidden White House Fortress** (ballroom + bunker) | AI NEWS | **9.1** | Prossimo da avviare | Public ballroom, private bunker (contrasto superficie/profondità) | Score più alto del lotto. Ora torna in cima dopo il completamento del video Jerusalem. |
-| 2 | Iran-Linked Hackers vs US Infrastructure PLCs | AI NEWS | 9.0 | Da iniziare | How attackers touch real-world controls (HMI/SCADA) | Advisory CISA AA26-097A. Più cyber che mystery. |
-| 3 | The Undersea Cable Cutter Problem | AI NEWS | 8.6 | Backlog | The physical internet can be cut | Dual-use technology + sabotaggi backbone. |
-| 4 | Lost Cold War Bunker Found Under Scarborough Castle | AI NEWS | 8.4 | Backlog | A bunker forgotten under tourists’ feet | Discovery concreta + visuale forte + nostalgia Cold War. |
-| 5 | Inside Europe’s Doomsday Bunkers (Regan Vest + others) | AI NEWS | 8.2 | Backlog | Museums of fear — old bunkers, new anxieties | Ritorno interesse bunker/musei con tensioni geopolitiche. |
-| 6 | Cyber War Spillover: Iran Nexus Tactics Escalation | AI NEWS | 8.1 | Backlog | From espionage to disruption | Follow-up naturale del #2. |
-| 7 | The Ghost Town That Reappeared from Lake Mead (St. Thomas) | AI NEWS | 7.8 | Backlog | A town drowned, then resurrected | Story visiva forte, clima + storia USA. |
-| 8 | 4,000-Year-Old Tunnel Network in Inner Mongolia | AI NEWS | 7.6 | Backlog | Ancient defensive engineering ahead of its time | Discovery archeologica solida. |
-| 9 | Near-Ghost Town Evacuation: Campo Wildfire Case | AI NEWS | 6.9 | Bassa priorità | How a town of 60 almost disappeared in one weekend | Event-driven, meno evergreen. |
+| 1 | **The Hidden White House Fortress** (ballroom + bunker) | AI NEWS | **9.1** | In produzione (POET completato) | Public ballroom, private bunker (hidden government architecture) | Cartella: `production/2026-05-27_hidden-white-house-fortress/`. Da trattare esplicitamente come secret infrastructure / hidden government architecture, non come political explainer puro. |
+| 2 | Lost Cold War Bunker Found Under Scarborough Castle | AI NEWS | 8.4 | Backlog prioritario | A bunker forgotten under tourists’ feet | Fit molto alto col brand: bunker reale, riscoperta, spazio nascosto sotto luogo storico. |
+| 3 | The Undersea Cable Cutter Problem | AI NEWS | 8.6 | Backlog alto | The physical internet can be cut | Meno bunker-like, ma forte come infrastructure threat / hidden systems story. |
+| 4 | Inside Europe’s Doomsday Bunkers (Regan Vest + others) | AI NEWS | 8.2 | Backlog alto | Museums of fear — old bunkers, new anxieties | Fit diretto col filone bunker / continuity spaces. |
+| 5 | 4,000-Year-Old Tunnel Network in Inner Mongolia | AI NEWS | 7.6 | Backlog mystery fit | Ancient defensive engineering ahead of its time | Fit forte col lato tunnel / hidden underground systems del canale. |
+| 6 | The Ghost Town That Reappeared from Lake Mead (St. Thomas) | AI NEWS | 7.8 | Backlog mystery fit | A town drowned, then resurrected | Forte visuale mystery-place, meno government ma coerente con hidden places. |
+| 7 | Iran-Linked Hackers vs US Infrastructure PLCs | AI NEWS | 9.0 | Backlog cyber lane | How attackers touch real-world controls (HMI/SCADA) | Score altissimo, ma meno coerente col filone principale secret infrastructure / hidden spaces. |
+| 8 | Cyber War Spillover: Iran Nexus Tactics Escalation | AI NEWS | 8.1 | Backlog cyber lane | From espionage to disruption | Follow-up naturale del #7. |
+| 9 | Near-Ghost Town Evacuation: Campo Wildfire Case | AI NEWS | 6.9 | Bassa priorità | How a town of 60 almost disappeared in one weekend | Event-driven, meno evergreen e meno allineato al core hidden-infrastructure. |
 
 ---
 
@@ -99,7 +107,7 @@ Queste hanno priorità più bassa rispetto ai topic AI NEWS con score alto, a me
 ---
 
 **Prossima azione consigliata (2026-05-27):**  
-Avviare **The Hidden White House Fortress** con il flusso standard: CLERK references già disponibili, poi SCRIPT STEALING → POET → PRODUCTION PACK.
+Lanciare **PRODUCTION PACK** su `production/2026-05-27_hidden-white-house-fortress/` usando `script_final.md` come base.
 
 ---
 

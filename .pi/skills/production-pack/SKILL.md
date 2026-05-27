@@ -125,20 +125,14 @@ Genera anche:
 
 Formato:
 - una scena per riga
-- ogni riga contiene il **prompt finale combinato immagine** di quella scena
-- all'inizio della riga va inserita una label scena leggibile come metadata
+- ogni riga contiene **solo** il prompt finale combinato immagine della scena
+- nessuna label, nessun prefisso, nessun metadata inline
 
-Formato obbligatorio riga:
+Formato riga:
 
 ```text
-[TRACKING ONLY — IGNORE THIS LABEL IN IMAGE GENERATION: SCENE 01 - <nome scena>] <prompt finale combinato immagine>
+<prompt finale combinato immagine>
 ```
-
-Regola importante:
-- la label iniziale serve solo come identificatore umano / parsing
-- deve dire esplicitamente al modello di ignorarla
-- il vero prompt inizia subito dopo la label
-- la label deve essere breve, neutra e non descrittiva oltre il nome scena, per minimizzare qualsiasi impatto se il testo viene incollato interamente
 
 ### FASE 6 — QA pack
 

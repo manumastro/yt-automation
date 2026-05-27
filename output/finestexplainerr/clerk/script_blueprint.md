@@ -3,7 +3,7 @@
 ## Parametri
 - **Durata target:** 8 minuti (sweet spot per retention + ad revenue)
 - **Struttura:** Listicle Esplicativo — 5-8 entry da 60-90 secondi ciascuno
-- **Tono:** Narratore documentaristico onnisciente, distaccato, leggermente cupo
+- **Tono (sempre, tutti i video):** narratore investigativo-ombrato; informativo ma con inquietudine sottile, basato su contrasto tra versione ufficiale e livello nascosto (senza dipendere dal tema bunker).
 - **Formato:** Faceless, voiceover puro, zero CTA, zero intro personale
 
 ---

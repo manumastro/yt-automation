@@ -31,6 +31,7 @@ Stato sintetico canale:
 - Video completati: 2
 - Ultimo video completato: `2026-05-25_ancient-tunnel-jerusalem`
 - Prossimo topic da produrre: `The Hidden White House Fortress`
+- Produzione appena avviata: `2026-05-27_hidden-white-house-fortress` (SCRIPT STEALING completato)
 
 Regola d'uso:
 - Questo file resta una vista corrente del canale
