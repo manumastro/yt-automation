@@ -7,7 +7,7 @@ Serve come dashboard corrente del canale e riflette solo lo stato attuale delle 
 Produzioni rilevate: 2
 
 1) 2026-05-24_secret-government-bunkers
-Stato: completata / pronta per produzione asset
+Stato: video completato
 Dettaglio: `output/finestexplainerr/production/2026-05-24_secret-government-bunkers/resoconto_produzione_it.txt`
 File chiave presenti:
 - script_final.md
@@ -28,8 +28,9 @@ Stato sintetico canale:
 - NICHE BENDING: completato
 - AI NEWS: completato
 - Produzioni completate o avviate: 2
-- Video più avanzato: `2026-05-25_ancient-tunnel-jerusalem`
-- Prossimo step operativo più vicino: pubblicazione / packaging finale della produzione `2026-05-25_ancient-tunnel-jerusalem`
+- Video completati: 2
+- Ultimo video completato: `2026-05-25_ancient-tunnel-jerusalem`
+- Prossimo topic da produrre: `The Hidden White House Fortress`
 
 Regola d'uso:
 - Questo file resta una vista corrente del canale

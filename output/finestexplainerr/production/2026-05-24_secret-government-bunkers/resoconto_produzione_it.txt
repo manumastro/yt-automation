@@ -1,6 +1,6 @@
 Resoconto produzione — Secret Government Bunkers
 Cartella: output/finestexplainerr/production/2026-05-24_secret-government-bunkers/
-Stato: completata / pronta per produzione asset
+Stato: video completato
 
 Deliverable presenti:
 - outline.md
@@ -15,10 +15,11 @@ Deliverable presenti:
 Sintesi:
 - Primo video prodotto per il canale finestexplainerr nella nicchia "Secret Cities"
 - Pipeline completa eseguita fino a POET
-- Production pack già generato
-- Materiale pronto per voiceover, immagini e packaging finale
+- Production pack generato
+- Voiceover, immagini e montaggio completati
+- Video finale bunker completato
 
 Prossimi step operativi:
-1. Generare/registrare voiceover dal production_pack_it.md
-2. Produrre visual usando gli image prompts
-3. Assemblare video finale e testare titolo/thumbnail
+1. Archiviare o esportare il master finale nella destinazione pubblicazione
+2. Se necessario, aggiornare metadata pubblicazione (titolo, descrizione, thumbnail, scheduling)
+3. Passare al prossimo topic prioritario della coda editoriale

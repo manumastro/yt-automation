@@ -1,29 +1,25 @@
 # Production Queue — Finest Explainer
 
-**Ultimo aggiornamento:** 2026-05-25  
-**Video prodotti:** 1 (Secret Government Bunkers — 2026-05-24)  
+**Ultimo aggiornamento:** 2026-05-27  
+**Video prodotti:** 2 (Secret Government Bunkers — 2026-05-24; Ancient Tunnel Mystery in Jerusalem — 2026-05-25)  
 **Scopo:** Classifica chiara e mantenibile dei prossimi video da produrre. Singola fonte di verità per il flusso di produzione.
 
 ---
 
-## Decisione editoriale corrente (2026-05-25)
+## Decisione editoriale corrente (2026-05-27)
 
-**Prossimo topic da produrre:** **Ancient Tunnel Mystery in Jerusalem**
+**Prossimo topic da produrre:** **The Hidden White House Fortress**
 
 **Motivazione utente:**  
-Dopo il video sui "Secret Government Bunkers" (strutture sotterranee segrete di ambito governativo/moderno), si preferisce evitare una ripetizione tematica troppo stretta.  
+Dopo il completamento di **Ancient Tunnel Mystery in Jerusalem**, il vincolo di varietà che aveva spinto a posticipare il topic White House è stato già soddisfatto.  
 
-Il topic originario #1 per score — "The Hidden White House Fortress" (9.1) — presenterebbe un rischio elevato di similarità (entrambi mystery di infrastrutture nascoste legate a poteri istituzionali).  
+A questo punto torna prioritario il topic con score più alto del lotto, **The Hidden White House Fortress** (9.1), che unisce:
+- contrasto forte tra superficie pubblica e profondità nascosta
+- hook immediato e ad alta curiosità
+- continuità con il gusto del canale per infrastrutture segrete e spazi sotterranei
 
-**Ancient Tunnel Mystery in Jerusalem** offre un cambio di registro fresco:  
-- Scoperta archeologica recente (maggio 2026)  
-- Purpose completamente ignoto  
-- Framing mystery più "antico / inspiegabile" che "governativo moderno"
-
-**Angle narrativo consigliato (da news_angles.md):**  
-**"What it wasn’t"** — mystery framing che esclude sistematicamente le spiegazioni più ovvie (non è un acquedotto, non è moderno). Da lì si esplorano le ipotesi quarry vs mega-progetto incompiuto, archeologia sotto cantiere urbano attivo.
-
-Questo mantiene alta qualità (score 8.8 molto solido) e migliora la varietà del canale.
+**Angle narrativo consigliato:**  
+**Public ballroom, private bunker** — partire dal contrasto tra immagine istituzionale e struttura nascosta, mostrando come uno spazio apparentemente cerimoniale conviva con logiche di continuità governativa e protezione estrema.
 
 ---
 
@@ -42,16 +38,15 @@ Questo mantiene alta qualità (score 8.8 molto solido) e migliora la varietà de
 
 | Pos (flusso) | Topic | Fonte | AI Score | Stato | Angle consigliato | Note / Riferimenti |
 |--------------|-------|-------|----------|-------|-------------------|--------------------|
-| 1 | **Ancient Tunnel Mystery in Jerusalem** | AI NEWS | 8.8 | **Packaging completato** (2026-05-25) | "What it wasn’t" mystery framing | Cartella: `production/2026-05-25_ancient-tunnel-jerusalem/`. Tutti i deliverable SCRIPT STEALING pronti (outline + script + title_options + qa_checklist). Prossimo: voiceover + immagini. |
-| 2 | **The Hidden White House Fortress** (ballroom + bunker) | AI NEWS | **9.1** | Da iniziare (posticipato) | Public ballroom, private bunker (contrasto superficie/profondità) | Score più alto del lotto. Posticipato per rischio similarità tematica con video bunker già prodotto. |
-| 3 | Iran-Linked Hackers vs US Infrastructure PLCs | AI NEWS | 9.0 | Da iniziare | How attackers touch real-world controls (HMI/SCADA) | Advisory CISA AA26-097A. Più cyber che mystery. |
-| 4 | The Undersea Cable Cutter Problem | AI NEWS | 8.6 | Backlog | The physical internet can be cut | Dual-use technology + sabotaggi backbone. |
-| 5 | Lost Cold War Bunker Found Under Scarborough Castle | AI NEWS | 8.4 | Backlog | A bunker forgotten under tourists’ feet | Discovery concreta + visuale forte + nostalgia Cold War. |
-| 6 | Inside Europe’s Doomsday Bunkers (Regan Vest + others) | AI NEWS | 8.2 | Backlog | Museums of fear — old bunkers, new anxieties | Ritorno interesse bunker/musei con tensioni geopolitiche. |
-| 7 | Cyber War Spillover: Iran Nexus Tactics Escalation | AI NEWS | 8.1 | Backlog | From espionage to disruption | Follow-up naturale del #3. |
-| 8 | The Ghost Town That Reappeared from Lake Mead (St. Thomas) | AI NEWS | 7.8 | Backlog | A town drowned, then resurrected | Story visiva forte, clima + storia USA. |
-| 9 | 4,000-Year-Old Tunnel Network in Inner Mongolia | AI NEWS | 7.6 | Backlog | Ancient defensive engineering ahead of its time | Discovery archeologica solida. |
-| 10 | Near-Ghost Town Evacuation: Campo Wildfire Case | AI NEWS | 6.9 | Bassa priorità | How a town of 60 almost disappeared in one weekend | Event-driven, meno evergreen. |
+| 1 | **The Hidden White House Fortress** (ballroom + bunker) | AI NEWS | **9.1** | Prossimo da avviare | Public ballroom, private bunker (contrasto superficie/profondità) | Score più alto del lotto. Ora torna in cima dopo il completamento del video Jerusalem. |
+| 2 | Iran-Linked Hackers vs US Infrastructure PLCs | AI NEWS | 9.0 | Da iniziare | How attackers touch real-world controls (HMI/SCADA) | Advisory CISA AA26-097A. Più cyber che mystery. |
+| 3 | The Undersea Cable Cutter Problem | AI NEWS | 8.6 | Backlog | The physical internet can be cut | Dual-use technology + sabotaggi backbone. |
+| 4 | Lost Cold War Bunker Found Under Scarborough Castle | AI NEWS | 8.4 | Backlog | A bunker forgotten under tourists’ feet | Discovery concreta + visuale forte + nostalgia Cold War. |
+| 5 | Inside Europe’s Doomsday Bunkers (Regan Vest + others) | AI NEWS | 8.2 | Backlog | Museums of fear — old bunkers, new anxieties | Ritorno interesse bunker/musei con tensioni geopolitiche. |
+| 6 | Cyber War Spillover: Iran Nexus Tactics Escalation | AI NEWS | 8.1 | Backlog | From espionage to disruption | Follow-up naturale del #2. |
+| 7 | The Ghost Town That Reappeared from Lake Mead (St. Thomas) | AI NEWS | 7.8 | Backlog | A town drowned, then resurrected | Story visiva forte, clima + storia USA. |
+| 8 | 4,000-Year-Old Tunnel Network in Inner Mongolia | AI NEWS | 7.6 | Backlog | Ancient defensive engineering ahead of its time | Discovery archeologica solida. |
+| 9 | Near-Ghost Town Evacuation: Campo Wildfire Case | AI NEWS | 6.9 | Bassa priorità | How a town of 60 almost disappeared in one weekend | Event-driven, meno evergreen. |
 
 ---
 
@@ -74,6 +69,7 @@ Queste hanno priorità più bassa rispetto ai topic AI NEWS con score alto, a me
 | Data | Titolo / Topic | Cartella produzione | Note |
 |------|----------------|---------------------|------|
 | 2026-05-24 | The Secret Government Bunkers Explained In 8 Minutes | `production/2026-05-24_secret-government-bunkers/` | Primo video della nicchia "Secret Cities". Tutti i 5 protocolli eseguiti. |
+| 2026-05-25 | Ancient Tunnel Mystery in Jerusalem | `production/2026-05-25_ancient-tunnel-jerusalem/` | Secondo video completato. Workflow completo: POET + production pack + TTS + immagini + montaggio. |
 
 ---
 
@@ -102,9 +98,8 @@ Queste hanno priorità più bassa rispetto ai topic AI NEWS con score alto, a me
 
 ---
 
-**Prossima azione consigliata (2026-05-25):**  
-Script completo scritto (`script.md`).  
-Prossimi: title_options.md (10 titoli + 3 thumbnail concepts) + qa_checklist.md (FASE 6-7).
+**Prossima azione consigliata (2026-05-27):**  
+Avviare **The Hidden White House Fortress** con il flusso standard: CLERK references già disponibili, poi SCRIPT STEALING → POET → PRODUCTION PACK.
 
 ---
 
