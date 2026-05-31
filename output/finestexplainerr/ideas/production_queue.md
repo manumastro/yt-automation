@@ -2,6 +2,7 @@
 
 **Ultimo aggiornamento:** 2026-05-27  
 **Video prodotti:** 2 (Secret Government Bunkers — 2026-05-24; Ancient Tunnel Mystery in Jerusalem — 2026-05-25)  
+**Video in produzione:** 1 (The USSR's Secret Cities — 2026-05-27_ussr-secret-cities)  
 **Scopo:** Classifica chiara e mantenibile dei prossimi video da produrre. Singola fonte di verità per il flusso di produzione.
 
 **⚠️ FILOSOFIA EDITORIALE (aggiornata):**  
@@ -47,7 +48,7 @@ Tornare al feeling validato dal video **Secret Government Bunkers**:
 
 | Pos | Topic | Fonte | Pillar | Fit tono bunker | Stato | Note / Riferimenti |
 |-----|-------|-------|--------|------------------|-------|--------------------|
-| 1 | **The USSR's Secret Cities** (Closed cities ZATO, Yamantau, Pripyat ecc.) | Niche Bending | Secret / Invisible Cities | **Eccellente** | Backlog prioritario | Uno dei più oscuri e "bunker-like" in assoluto. Hook fortissimo ("non esisteva sulle mappe"). Da sviluppare per primo tra gli evergreen. |
+| 1 | **The USSR's Secret Cities** (Closed cities ZATO, Yamantau, Pripyat ecc.) | Niche Bending | Secret / Invisible Cities | **Eccellente** | **IN PRODUZIONE** — 2026-05-27_ussr-secret-cities | Script-stealing completato (outline + script + titoli + QA). Tono bunker-like validato. Prossimo: POET. |
 | 2 | **Inside Europe’s Doomsday Bunkers** (Regan Vest + altri) | AI NEWS + Niche Bending | Underground Cities | **Molto alto** | Backlog alto | "Museums of fear". Capsule del tempo. Fit quasi identico al video bunker USA già prodotto. Ottima varietà geografica. |
 | 3 | **Underground Cities Beneath Major Cities** (Seattle, NYC, Chicago, Montreal) | Niche Bending | Underground Cities | Alto | Backlog forte | Relatability altissima + mistero "sotto i tuoi piedi". |
 | 4 | **Lost Cold War Bunker Found Under Scarborough Castle** | AI NEWS | Underground Cities | Alto | Backlog | Scoperta fisica + bunker sigillato sotto castello turistico. Molto visivo. |
@@ -94,8 +95,9 @@ Tornare al feeling validato dal video **Secret Government Bunkers**:
 ---
 
 **Prossima azione consigliata:**  
-Scegliere tra **USSR's Secret Cities** e **Europe’s Doomsday Bunkers**.  
-Una volta scelto, lanciare **SCRIPT STEALING** usando il blueprint del canale + le indicazioni di tono in `secret_cities_strategy.md`.
+**The USSR's Secret Cities** è in produzione (2026-05-27_ussr-secret-cities).  
+Script-stealing completato. Lanciare **/skill:poet** sul file `script.md`, poi **/skill:production-pack** per generare prompt immagine + audio (stile bunker production).  
+Europe’s Doomsday Bunkers resta #2 in coda come varietà geografica.
 
 ---
 

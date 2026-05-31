@@ -1,0 +1,7 @@
+{
+  "model": "grok-imagine-image-lite",
+  "prompt": "Cinematic investigative documentary still, ultra-realistic, 35mm film look, subtle grain, high dynamic range, cold war secrecy atmosphere, desolate Soviet closed cities and restricted zones, abandoned nuclear facilities, overgrown ghost towns, massive underground mountain bunkers, barbed wire perimeters, raked sand strips, concrete brutalist architecture, radioactive decay and nature reclaiming, muted desaturated palette (slate gray, cold blue, faded green, rust brown, concrete beige), strong contrast between surface emptiness and hidden infrastructure, wide to medium shots, precise architectural and environmental detail, minimal or no human presence, atmosphere of long-term secrecy, quiet dread and permanence, no text overlays, no logos, no watermarks, no fantasy or sci-fi elements, no modern anachronisms. Wide shot of a remote Russian forest at dawn, heavy barbed wire fence stretching into the distance, raked sand strip along the perimeter, armed watchtower in the background, cold mist, oppressive atmosphere of total isolation, Soviet-era military secrecy.",
+  "n": 1,
+  "size": "1280x720",
+  "response_format": "url"
+}
