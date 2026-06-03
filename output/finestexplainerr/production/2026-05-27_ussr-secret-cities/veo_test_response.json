@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "model_not_found",
+    "message": "分组 grok 下模型 veo-3.1-fast-generate-preview 无可用渠道（distributor） (request id: 202605311455431158465018268d9d6H7gqJk5y)",
+    "type": "new_api_error"
+  }
+}
